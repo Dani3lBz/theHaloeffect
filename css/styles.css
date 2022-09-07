@@ -15,10 +15,11 @@ body {
     "pic pic"
     "articulo twi"
     "vid vid"
-    "pies pies"; 
+    "pies pies";
 }
 .header {
     grid-area: cabeza;
+    
 }
 .header__logo {
     width: 80px;
@@ -29,7 +30,7 @@ body {
     list-style-type: none;
     padding-inline-start: 0%;
     margin: 0%;
-    background-color: black;
+    background: linear-gradient(to top, black, hsl(168deg 100% 50% / 42%));
 }
 /*Arreglo para dejar el logo en un extremo y el menú en otro*/
 .filler {
@@ -80,7 +81,8 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background-color: black;
+    /*background-color: black;*/
+    background: linear-gradient(to top, black, hsl(168deg 100% 50% / 42%));
     text-decoration: none;
     list-style-type: none;
     padding-inline-start: 0%;
@@ -117,6 +119,7 @@ footer ul li a:hover {
 /* News */
 .news {
     grid-area: articulo;
+    
 }
 .news__article {
     display: flex;
