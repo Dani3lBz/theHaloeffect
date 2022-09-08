@@ -29,7 +29,7 @@ body {
     list-style-type: none;
     padding-inline-start: 0%;
     margin: 0%;
-    background: black;
+    background: linear-gradient(to top, black, hsl(168deg 100% 50% / 42%));
 }
 /*Arreglo para dejar el logo en un extremo y el menú en otro*/
 .filler {
@@ -80,7 +80,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background: black;
+    background: linear-gradient(to top, black, hsl(168deg 100% 50% / 42%));
     text-decoration: none;
     list-style-type: none;
     padding-inline-start: 0%;
@@ -231,7 +231,25 @@ footer ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 4px;
+}/*Efecto Opacity Collage*/
+.pila1 div a img {
+    filter: opacity(0.3);
 }
+.pila1 div a img:hover {
+    filter: none;
+}
+.pila2 div a img {
+    filter: opacity(0.3);
+}
+.pila2 div a img:hover {
+    filter: none;
+}
+.pila3 div a img {
+    filter: opacity(0.3);
+}
+.pila3 div a img:hover {
+    filter: none;
+}/*Fin Efecto Opacity Collage*/
 .pila1 {
     flex: 25%;
     max-width: 25%;
@@ -307,7 +325,16 @@ footer ul li a:hover {
 }
 .musicLinks a {
     padding: 20px;
+}/*FX Music Icons*/
+.music__icon img {
+    width: 80px;
+    height: 80px;
+    transition: 0.5s;
 }
+.music__icon img:hover {
+    width: 100px;
+    height: 100px;
+}/*Fin FX Music Icons*/
 .musicBanner {
     display: flex;
     flex-direction: column;
