@@ -195,12 +195,9 @@ footer ul li a:hover {
     text-align: left;
     text-decoration: none;
     font-size: 25px;
-    color: whitesmoke; 
+    color: hsl(168deg 100% 50%); 
 }
 /* hover para el link a Wiki */
-.bio a:hover {
-    font-size: 200%;
-}
 .band__links li a:hover {
     font-size: 150%;
 }
@@ -211,7 +208,7 @@ footer ul li a:hover {
     color: whitesmoke;
 }
 .band {
-    color: whitesmoke;
+    color: hsl(168deg 100% 50%);
     font-size: 18px;
 }  
 /* Gallery */
