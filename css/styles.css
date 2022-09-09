@@ -229,26 +229,26 @@ footer ul li a:hover {
     justify-content: center;
     padding: 0 4px;
 }/*Efecto Collage*/
-.pila1 div a img {
+.pila1 div img {
     filter: opacity(0.3);
 }
-.pila1 div a img:hover {
+.pila1 div img:hover {
     filter: none;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
-.pila2 div a img {
+.pila2 div img {
     filter: opacity(0.3);
 }
-.pila2 div a img:hover {
+.pila2 div img:hover {
     filter: none;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
-.pila3 div a img {
+.pila3 div img {
     filter: opacity(0.3);
 }
-.pila3 div a img:hover {
+.pila3 div img:hover {
     filter: none;
-    transform: scale(1.1);
+    transform: scale(1.2);
 }/*Fin Efecto Collage*/
 .pila1 {
     flex: 25%;
