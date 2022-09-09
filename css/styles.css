@@ -228,25 +228,28 @@ footer ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 4px;
-}/*Efecto Opacity Collage*/
+}/*Efecto Collage*/
 .pila1 div a img {
     filter: opacity(0.3);
 }
 .pila1 div a img:hover {
     filter: none;
+    transform: scale(1.1);
 }
 .pila2 div a img {
     filter: opacity(0.3);
 }
 .pila2 div a img:hover {
     filter: none;
+    transform: scale(1.1);
 }
 .pila3 div a img {
     filter: opacity(0.3);
 }
 .pila3 div a img:hover {
     filter: none;
-}/*Fin Efecto Opacity Collage*/
+    transform: scale(1.1);
+}/*Fin Efecto Collage*/
 .pila1 {
     flex: 25%;
     max-width: 25%;
