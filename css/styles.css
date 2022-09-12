@@ -234,21 +234,21 @@ footer ul li a:hover {
 }
 .pila1 div img:hover {
     filter: none;
-    transform: scale(1.2);
+    transform: scale(2);
 }
 .pila2 div img {
     filter: opacity(0.3);
 }
 .pila2 div img:hover {
     filter: none;
-    transform: scale(1.2);
+    transform: scale(2);
 }
 .pila3 div img {
     filter: opacity(0.3);
 }
 .pila3 div img:hover {
     filter: none;
-    transform: scale(1.2);
+    transform: scale(2);
 }/*Fin Efecto Collage*/
 .pila1 {
     flex: 25%;
