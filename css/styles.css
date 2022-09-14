@@ -32,33 +32,10 @@ body {
 }
 .navbar-dark{
     --bs-navbar-toggler-border-color: #198754;
+    --bs-navbar-hover-color: black;
 }
-
-/*.header__menuList {
-    display: flex;
-    flex-flow: row-reverse wrap;
-    list-style-type: none;
-    padding-inline-start: 0%;
-    margin: 0%;
-    background: linear-gradient(to top, black, hsl(168deg 100% 50% / 42%));
-}
-/*Arreglo para dejar el logo en un extremo y el menú en otro*/
-/*.filler {
-    margin-right: auto;
-}
-.ghost {
-    display: none;
-}*/
-/*fin del arreglo*/
-/*nav ul li a { 
-    display: block;
-    color: hsl(168deg 100% 50%);
-    text-align: center;    
-    padding: 10px 11px;
-    text-decoration: none;
-}*/
 nav ul li a:hover {
-    background-color: rgb(7, 134, 109);
+    background-color: rgb(14, 223, 181);
 }
 .main {
     grid-area: pic;
@@ -86,24 +63,30 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-top: auto;
+}
+.foot {
+    padding-left: 0%;
+    padding-right: 0%;
 }
 .footer__links {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background: linear-gradient(to top, black, hsl(168deg 100% 50% / 42%));
+    background: linear-gradient(to bottom, black, hsl(168deg 100% 50% / 12%));
     text-decoration: none;
     list-style-type: none;
     padding-inline-start: 0%;
     margin: 0%;
 }
-footer ul li a {
+.foot ul li a {
     color: #00ffcc;
+    
     text-decoration: none;
     padding: 9px 6px;
 }
-footer ul li a:hover {
-    background-color: rgb(7, 134, 109);
+.foot ul li a:hover {
+    background-color: rgb(14, 223, 181);
 }
 /*Arreglo para dejar menú footer en un extremo y RRSS en el otro*/
 .relleno {
@@ -121,8 +104,13 @@ footer ul li a:hover {
     justify-content: center;
     margin: 0%;
     padding: 5px;
-    color: hsl(168deg 100% 50%);
-    background-color: black;
+    color: #00ffcc;
+}
+h5 {
+    font-size: 0.7rem;
+}
+.final {
+    background: linear-gradient(to top, black, hsl(168deg 100% 50% / 22%));
 }
 /* cierre css para cosas generales */
 /* News */
