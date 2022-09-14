@@ -23,7 +23,12 @@ body {
 .header__logo {
     width: 80px;
 }
-.header__menuList {
+.bg-grad{
+    background: linear-gradient(to top, black, hsl(168deg 100% 50% / 32%));
+    --bs-navbar-color: #00ffcc ;
+}
+
+/*.header__menuList {
     display: flex;
     flex-flow: row-reverse wrap;
     list-style-type: none;
@@ -32,20 +37,20 @@ body {
     background: linear-gradient(to top, black, hsl(168deg 100% 50% / 42%));
 }
 /*Arreglo para dejar el logo en un extremo y el menú en otro*/
-.filler {
+/*.filler {
     margin-right: auto;
 }
 .ghost {
     display: none;
-}
+}*/
 /*fin del arreglo*/
-nav ul li a { 
+/*nav ul li a { 
     display: block;
     color: hsl(168deg 100% 50%);
     text-align: center;    
     padding: 10px 11px;
     text-decoration: none;
-}
+}*/
 nav ul li a:hover {
     background-color: rgb(7, 134, 109);
 }
@@ -87,7 +92,7 @@ nav ul li a:hover {
     margin: 0%;
 }
 footer ul li a {
-    color: hsl(168deg 100% 50%);
+    color: #00ffcc;
     text-decoration: none;
     padding: 9px 6px;
 }

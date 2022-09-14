@@ -17,17 +17,37 @@
     <body>
         <div class="fullGrid">
             <header class="header">    
-                <nav class="header__nav"> 
-                    <ul class="header__menuList">
-                        <li><a href="./pages/contact.html" id="contact">Contact</a></li>
-                        <li><a href="./pages/bio.html" id="bio">Bio</a></li>
-                        <li><a href="./pages/music.html" id="music">Music</a></li>
-                        <li><a href="./pages/gallery.html" id="gallery">Gallery</a></li>
-                        <li><a href="./index.html" id="home">Home</a></li>
-                        <li class="filler"><a class="ghost" href=""></a></li><!--arreglo nav-->
-                        <li class="icon"><img class="header__logo animate__animated animate__rotateIn" src="./media/images/symbologo+copy.png" alt="logo"> </li>
-                    </ul>
-                </nav>
+                <nav class="navbar navbar-expand-lg bg-grad">
+                    <div class="container-fluid">
+                    
+                      <a class="navbar-brand" href="./index.html">
+                      <img class="header__logo animate__animated animate__rotateIn" src="./media/images/symbologo+copy.png" alt="logo"></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/gallery.html" id="gallery">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/music.html">Music</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/bio.html">Bio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                  </nav>
             </header>
             <main class="main">
                 <div class="caratula">
