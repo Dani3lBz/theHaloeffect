@@ -20,12 +20,18 @@ body {
 .header {
     grid-area: cabeza;
 }
+/*Nav mods*/
 .header__logo {
     width: 80px;
 }
 .bg-grad{
     background: linear-gradient(to top, black, hsl(168deg 100% 50% / 32%));
-    --bs-navbar-color: #00ffcc ;
+    --bs-navbar-color: #00ffcc;
+    --bs-navbar-active-color: #00ffcc;
+    --bs-nav-link-hover-color: #00ffcc;
+}
+.navbar-dark{
+    --bs-navbar-toggler-border-color: #198754;
 }
 
 /*.header__menuList {
