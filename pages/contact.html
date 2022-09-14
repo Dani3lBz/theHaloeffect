@@ -19,7 +19,7 @@
             <header class="header">        
                 <nav class="navbar navbar-expand-lg navbar-dark bg-grad">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="../index.html">
+                      <a class="navbar-brand" href="../index.html" id="casa">
                       <img class="header__logo animate__animated animate__rotateIn" src="../media/images/symbologo+copy.png" alt="logo"></a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -51,30 +51,34 @@
                     <img class="main__pics" src="../media/images/halo_mainLogo1.jpg" alt="band name">
                     <h1 class="main__title animate__animated animate__flipInX">-~~\\ Contact \\~~-</h1>
                 </div><!--fin de caratula-->            
-                <form class="formulario">            
-                    <label class="animate__animated animate__zoomInLeft" for="email">Enter your email</label>
-                    <input type="email" id="email">                
-                    <textarea name="write to us" cols="30" rows="25"></textarea>
-                    <input class="animate__animated animate__flipInX" type="submit" value="Send to Us">
-                    <input type="reset" value="Delete">           
-                </form>
+                <div class="mb-3 d-grid gap-2 col-6 mx-auto">
+                    <label for="exampleFormControlInput1" class="form-label animate__animated animate__zoomInLeft">Enter Your Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <a href="#" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Send to Us</a>
+                </div>
+                <div class="formulario mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
             </main>
-            <footer id="pie" class="pie">
-                <ul class="footer__links">                  
-                    <li><a href="#home">Back to Top</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="../index.html">Home</a></li>
-                    <li class="relleno"><a class="fill" href=""></a></li>
-                    <li class="relleno"><a class="fill" href=""></a></li>
-                    <li class="r"><a class="footer__icons" href="https://www.facebook.com/thehaloeffectse/" target="_blank">
-                        <img class="rrss" src="../media/images/facegreen.png" alt="facebook" title="facebook"></a></li>  
-                    <li class="r"><a class="footer__icons" href="https://www.instagram.com/thehaloeffectse/" target="_blank">
-                        <img class="rrss" src="../media/images/instagreen.png" alt="IG" title="Instagram"></a></li>
-                    <li class="r"><a class="footer__icons" href="https://www.twitter.com/thehaloeffectse/" target="_blank">
-                        <img class="rrss" src="../media/images/Twittergreen.png" alt="twitter" title="twitter"></a></li>
-                </ul>        
-                <div><h5 class="copyright">-~~\\ &copy Copyright \\~~-</h5></div>
-            </footer>
+            <footer id="pie" class="pie fix-bottom navbar-dark bg-grad">
+                <div class="container-fluid foot">
+                    <ul class="footer__links">                  
+                        <li><a href="#casa">Back to Top</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li class="relleno"><a class="fill" href=""></a></li>
+                        <li class="relleno"><a class="fill" href=""></a></li>
+                        <li class="r"><a class="footer__icons" href="https://www.facebook.com/thehaloeffectse/" target="_blank">
+                            <img class="rrss" src="../media/images/facegreen.png" alt="facebook" title="facebook"></a></li>  
+                        <li class="r"><a class="footer__icons" href="https://www.instagram.com/thehaloeffectse/" target="_blank">
+                            <img class="rrss" src="../media/images/instagreen.png" alt="IG" title="Instagram"></a></li>
+                        <li class="r"><a class="footer__icons" href="https://www.twitter.com/thehaloeffectse/" target="_blank">
+                            <img class="rrss" src="../media/images/Twittergreen.png" alt="twitter" title="twitter"></a></li>
+                    </ul>
+                    <div class="final"><h5 class="copyright">-~~\\ &copy Copyright \\~~-</h5></div>        
+                </div>
+            </footer> 
         </div><!--Fin contactGrid-->
          <!-- JavaScript Bundle with Popper -->
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>

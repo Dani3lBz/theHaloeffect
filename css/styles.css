@@ -27,7 +27,7 @@ body {
 .bg-grad{
     background: linear-gradient(to top, black, hsl(168deg 100% 50% / 32%));
     --bs-navbar-color: #00ffcc;
-    --bs-navbar-active-color: #00ffcc;
+    --bs-navbar-active-color: #00ffcc81;
     --bs-nav-link-hover-color: #00ffcc;
 }
 .navbar-dark{
@@ -81,13 +81,10 @@ nav ul li a:hover {
 }
 .foot ul li a {
     color: #00ffcc;
-    
     text-decoration: none;
     padding: 9px 6px;
 }
-.foot ul li a:hover {
-    background-color: rgb(14, 223, 181);
-}
+
 /*Arreglo para dejar menú footer en un extremo y RRSS en el otro*/
 .relleno {
     margin-left: auto;
@@ -102,6 +99,7 @@ nav ul li a:hover {
 .copyright {
     display: flex;
     justify-content: center;
+    width: 100%;
     margin: 0%;
     padding: 5px;
     color: #00ffcc;
@@ -110,7 +108,7 @@ h5 {
     font-size: 0.7rem;
 }
 .final {
-    background: linear-gradient(to top, black, hsl(168deg 100% 50% / 22%));
+    background: linear-gradient(to top, black, hsl(168deg 100% 50% / 10%));
 }
 /* cierre css para cosas generales */
 /* News */
@@ -289,6 +287,31 @@ h5 {
     "pic pic"
     "articulo articulo"
     "pies pies";
+}
+.form-control {
+    width: auto;
+}
+.form-label {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.mb-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #00ffcc;
+}
+.btn-primary {
+    color: #00ffcc;
+    background: linear-gradient(to top, black, hsl(168deg 100% 50% / 32%));
+    --bs-btn-border-color: #000000;
+    --bs-btn-hover-color: rgb(10, 10, 10);
+    --bs-btn-hover-bg: #00ffcc;
+    --bs-btn-hover-border-color: #1c3517;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: rgb(19, 226, 99);
+    --bs-btn-active-bg: #00ffcc83;
+    --bs-btn-active-border-color: #30343a;
 }
 .formulario {
     grid-area: articulo;
