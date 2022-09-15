@@ -223,6 +223,7 @@ h5 {
     "pic pic"
     "articulo articulo"
     "pies pies";
+    min-height: 100vh;
 }
 .collage {
     grid-area: articulo;
