@@ -34,6 +34,9 @@ body {
     --bs-navbar-toggler-border-color: #198754;
     --bs-navbar-hover-color: black;
 }
+.navbar-toggler-icon {
+    background-image: none;
+}
 nav ul li a:hover {
     background-color: rgb(14, 223, 181);
 }
@@ -47,7 +50,7 @@ nav ul li a:hover {
 .main__pics {
     align-items: center;
     width: 100%;
-    height: 300px;
+    height: autopx;
     margin: 0%;
     border: 0%;
 }
@@ -73,7 +76,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background: linear-gradient(to bottom, black, hsl(168deg 100% 50% / 12%));
+    background: linear-gradient(to bottom, black, hsl(168deg 100% 50% / 10%));
     text-decoration: none;
     list-style-type: none;
     padding-inline-start: 0%;
@@ -93,8 +96,37 @@ nav ul li a:hover {
     display: none;
 }
 /*Fin del arreglo*/
-.rrss {
-    width: 20px;
+/*RRSS Icons*/
+.bi-facebook {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #00ffcc;
+}
+.bi-facebook:hover {
+	color: #4f7ee4;
+}
+.bi-instagram {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #00ffcc;
+}
+.bi-instagram:hover {
+    background: radial-gradient(circle at 30% 110%, #ffdb8b 0%, #ee653d 25%, #d42e81 50%, #a237b6 75%, #3e5fbc 100%);
+	box-shadow: 0 15px 40px 1px rgba(0,0,0,0.3);
+}
+.bi-twitter {	
+	font-size: 20px;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #00ffcc;
+}
+.bi-twitter:hover {
+	color: #0da9f1
 }
 .copyright {
     display: flex;
@@ -108,20 +140,12 @@ h5 {
     font-size: 0.7rem;
 }
 .final {
-    background: linear-gradient(to top, black, hsl(168deg 100% 50% / 10%));
+    background: linear-gradient(to top, black, hsl(168deg 100% 50% / 11%));
 }
 /* cierre css para cosas generales */
 /* News */
 .news {
     grid-area: articulo;
-    
-}
-.news__article {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-items: center;
 }
 .news__article--title {
     justify-self: flex-start;
@@ -135,41 +159,14 @@ h5 {
     width: 100vw;
     color: whitesmoke;
 }
-.cover {
-    grid-column: 1/2;
-}
 .news__pic {
     width: 350px;
-    padding: 10px;
+    padding: 20px;
     margin: 0%;
+    margin-left: 45px;
 }
-.iframeSize__Twitter {
-    grid-area: twi;
-    padding: 30px;
-}
-.twibox {
-    grid-area: twi;
-}
-.iframeSize {
-    grid-area: vid;
-    max-width: 1024px;
-    padding: 10px;
-    margin: auto;
-}
-.video {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%;
-}
-.responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
+.ratio {
+    --bs-aspect-ratio: 50%;
 }
 /* Bio */
 .bioGrid {
@@ -364,15 +361,12 @@ h5 {
 }
 .musicBanner img {
     width: 100%;
-    height: 800px;
+    height: auto;
 }
 /*arreglo para laptop 1024px según Chrome*/
 @media screen and (max-width: 1024px){
     .fullGrid {
         grid-template-rows:auto auto auto auto auto;
-    }
-    .main__pics {
-        height: 170px;
     }
     .main__title {
         font-size: 18px;
@@ -386,9 +380,6 @@ h5 {
     .music__icon img {
         width: 45px;
         height: 45px;
-    }
-    .musicBanner img {
-        height: 680px;
     }
     .bio__wiki--title {
         font-size: 22px;
@@ -417,20 +408,18 @@ h5 {
     }
     .footer__links li {
         font-size: 14px;
-    } 
+    }
     .copyright{
         font-size: 9px;
-    }
-    .main__pics {
-        height: 150px;
     }
     .main__title {
         font-size: 18px;
     }
 /*News mods for Tablet*/
     .news__pic {
-        width: 300px;
-        padding-top: 2px;
+        width: 333px;
+        padding-top: 15px;
+        margin-left: -17px;
     }
     .news__article--title {
         font-size: 15px;
@@ -438,13 +427,7 @@ h5 {
     .news__article--text {
         font-size: 16px;
     }
-    .iframeSize__Twitter {
-        padding: 1px;
-    }    
-    .iframeSize {
-        max-width: 500px;
-        padding: 0px;
-    }
+    
 /*galleryGrid and mods for Tablet*/
     .galleryGrid {
         grid-template-rows: auto auto auto auto;
@@ -459,12 +442,6 @@ h5 {
     }
     .musicLinks a{
         padding: 4px;
-    }
-    .musicBanner {
-        display: flex;
-    }
-    .musicBanner img {
-        height: 422px;
     }
 /*bioGrid and mods for Tablet*/
     .bioGrid {
@@ -491,15 +468,11 @@ h5 {
         width: 372px;
         height: 218px;
     }
-}
+}   
 /*Arreglo para medidas intermedias según Chrome*/
 @media screen and (max-width: 657px){
     .fullGrid {
         grid-template-rows: auto auto auto auto auto;
-    }
-    .iframeSize {
-        max-width: 420px;
-        padding: 0px;
     }
     .news__article--title {
         font-size: 15px;
@@ -519,15 +492,14 @@ h5 {
     .header__logo {
         width: 50px;
     }
+    .news__pic {
+        margin-left: 33px;
+    }
     .news__article--title {
         font-size: 14px;
     }
     .news__article--text {
         font-size: 13px;
-    }
-    .iframeSize {
-        max-width: 405px;
-        padding: 0px;
     }
     .galleryGrid {
         grid-template-rows: auto auto auto auto;
@@ -538,9 +510,6 @@ h5 {
     .music__icon img {
         width: 45px;
         height: 45px;
-    }
-    .musicBanner {
-        height: 408px;
     }
     .bioGrid {
         grid-template-rows: auto auto auto auto;
@@ -562,15 +531,13 @@ h5 {
     .formulario label {
         font-size: 12px;
     }
-}/*Fin de arreglos medidas intermedias*/    
+}
+/*Fin de arreglos medidas intermedias*/    
 /*Celu 375px según Chrome y Responsively*/
 @media screen and (max-width: 375px){
     .fullGrid {
         grid-template-rows: auto auto auto auto auto;   
     }
-    .main__pics {
-        height: 95px;
-    } 
     .main__title{
         font-size: 14px;
     }
@@ -580,32 +547,21 @@ h5 {
     .header__logo {
         width: 40px;
     }
-    .footer__links li {
-        font-size: 12px;
-    } 
-    .copyright{
-        font-size: 8px;
-    }
 /*News Cel*/ 
     .news__pic {
-        width: 200px;
+        width: 250px;
+        margin-left: 50px;
     }
     .news__article {
         justify-content: center;
     }
     .news__article--title {
         font-size: 14px;
+        margin-left: auto;
     }
     .news__article--text {
-        font-size: 13px;
-        margin-left: 20px;
-    }
-    .iframeSize {
-        max-width: 342px;
-        padding: 0px;
-    }
-    #twitter-widget-0 iframe {
-        height: 0%;
+        font-size: 12px;
+        margin-left: 5px;
     }
 /*Gallery Cel*/
     .galleryGrid {
@@ -625,10 +581,6 @@ h5 {
     .music__icon img {
         width: 50px;
         height: 50px;
-    }
-    .musicBanner img {
-        width: 100%;
-        height: 220px;
     }
 /*Bio Cel*/
     .bioGrid {
@@ -660,6 +612,9 @@ h5 {
 @media screen and (max-width: 320px){
     .header__logo {
         width: 30px;
+    }
+    .news__pic {
+        margin-left: 25px;
     }
     .bio__wiki--title {
         font-size: 15px;
