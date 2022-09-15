@@ -33,6 +33,8 @@ body {
 .navbar-dark{
     --bs-navbar-toggler-border-color: #198754;
     --bs-navbar-hover-color: black;
+    margin: 0%;
+    padding: 0%;
 }
 .navbar-toggler-icon {
     background-image: none;
