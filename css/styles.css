@@ -557,9 +557,6 @@ h5 {
     .header__menuList a {
         font-size: 12px;
     } 
-    .header__logo {
-        width: 40px;
-    }
 /*News Cel*/ 
     .news__pic {
         width: 260px;
@@ -623,9 +620,6 @@ h5 {
 }
 /*Cel 320px según Chrome*/
 @media screen and (max-width: 320px){
-    .header__logo {
-        width: 30px;
-    }
     .news__pic {
         margin-left: 25px;
     }
