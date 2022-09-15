@@ -156,7 +156,7 @@ h5 {
 .news__article--text {
     padding: 10px;
     margin: 0%;
-    width: 100vw;
+    width: 100%;
     color: whitesmoke;
 }
 .news__pic {
@@ -164,6 +164,12 @@ h5 {
     padding: 20px;
     margin: 0%;
     margin-left: 45px;
+}
+.cover {
+    padding: 0%;
+}
+.videoBox iframe {
+    margin-left: 12.5px;
 }
 .ratio {
     --bs-aspect-ratio: 50%;
@@ -496,10 +502,17 @@ h5 {
         margin-left: 33px;
     }
     .news__article--title {
-        font-size: 14px;
+        font-size: 15px;
     }
     .news__article--text {
-        font-size: 13px;
+        font-size: 14px;
+    }
+    .iframeSize__Twitter {
+        padding: 11%;
+        align-self: center;
+    }
+    .videoBox iframe {
+        margin-left: 11px;
     }
     .galleryGrid {
         grid-template-rows: auto auto auto auto;
@@ -539,7 +552,7 @@ h5 {
         grid-template-rows: auto auto auto auto auto;   
     }
     .main__title{
-        font-size: 14px;
+        font-size: 18px;
     }
     .header__menuList a {
         font-size: 12px;
@@ -549,18 +562,18 @@ h5 {
     }
 /*News Cel*/ 
     .news__pic {
-        width: 250px;
+        width: 260px;
         margin-left: 50px;
     }
     .news__article {
         justify-content: center;
     }
     .news__article--title {
-        font-size: 14px;
+        font-size: 15px;
         margin-left: auto;
     }
     .news__article--text {
-        font-size: 12px;
+        font-size: 14px;
         margin-left: 5px;
     }
 /*Gallery Cel*/
@@ -615,6 +628,9 @@ h5 {
     }
     .news__pic {
         margin-left: 25px;
+    }
+    .videoBox iframe{
+        margin-left: 12.5px;
     }
     .bio__wiki--title {
         font-size: 15px;
