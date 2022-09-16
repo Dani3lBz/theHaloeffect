@@ -1,15 +1,18 @@
 /* css general logo nav menu footer */ 
 html {
     font-size: 62,5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 body {
     background-color: black;
+    position: relative;
+    min-height: 100vh;
+    --bs-body-font-family: 'Raleway', sans-serif;
 }
 .fullGrid {
    display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 51px 337px 449px 750px 60px;
+    grid-template-rows: 65px 337px 420px 750px 60px;
     grid-template-areas: 
     "cabeza cabeza"
     "pic pic"
@@ -21,8 +24,15 @@ body {
     grid-area: cabeza;
 }
 /*Nav mods*/
+.container-fluid {
+    padding: 0px 5px;
+}
 .header__logo {
     width: 80px;
+}
+.navbar-toggler {
+    padding: 0%;
+    margin-top: 10px;
 }
 .bg-grad{
     background: linear-gradient(to top, black, hsl(168deg 100% 50% / 32%));
@@ -69,6 +79,9 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: flex-end;
     margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 .foot {
     padding-left: 0%;
@@ -87,7 +100,7 @@ nav ul li a:hover {
 .foot ul li a {
     color: #00ffcc;
     text-decoration: none;
-    padding: 9px 6px;
+    padding: 4px 3px;
 }
 
 /*Arreglo para dejar menú footer en un extremo y RRSS en el otro*/
@@ -135,7 +148,7 @@ nav ul li a:hover {
     justify-content: center;
     width: 100%;
     margin: 0%;
-    padding: 5px;
+    padding: 0px;
     color: #00ffcc;
 }
 h5 {
@@ -198,6 +211,15 @@ h5 {
     text-decoration: none;
     font-size: 25px;
     color: hsl(168deg 100% 50%); 
+}
+.bio__wiki--title {
+    margin: 5px;
+}
+.bio__article {
+    margin: 5px;
+}
+.bio__band {
+    margin: 5px;
 }
 /* hover para el link a Wiki */
 .band__links li a:hover {
@@ -309,6 +331,7 @@ h5 {
 .btn-primary {
     color: #00ffcc;
     background: linear-gradient(to top, black, hsl(168deg 100% 50% / 32%));
+    margin: 40px;
     --bs-btn-border-color: #000000;
     --bs-btn-hover-color: rgb(10, 10, 10);
     --bs-btn-hover-bg: #00ffcc;
@@ -331,6 +354,7 @@ h5 {
 }
 .formulario label {
     font-size: 22px;
+    margin: 22px;
 }
 /* Music */
 .musicGrid {
@@ -375,7 +399,7 @@ h5 {
 /*arreglo para laptop 1024px según Chrome*/
 @media screen and (max-width: 1024px){
     .fullGrid {
-        grid-template-rows:auto auto auto auto auto;
+        grid-template-rows:auto 245px 430px 520px auto;
     }
     .main__title {
         font-size: 18px;
@@ -386,10 +410,9 @@ h5 {
     .musicGrid {
         grid-template-rows:auto auto auto auto;
     }
-    /*.music__icon img {
-        width: 45px;
-        height: 45px;
-    }*/
+    .bioGrid {
+        grid-template-rows: 51px 238px 538px 55px;
+    }
     .bio__wiki--title {
         font-size: 22px;
     }
@@ -400,6 +423,9 @@ h5 {
     .band {
         font-size: 14px;
     }
+    .contactGrid {
+        grid-template-rows: 51px 240px 600px 60px;
+    }
     .formulario label {
         font-size: 18px;
     }
@@ -407,7 +433,7 @@ h5 {
 /*Tablet 768px según Chrome y Responsively*/
 @media screen and (max-width: 768px){
     .fullGrid {
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows: auto 188px 420px 420px auto;
     }
     .header__logo {
         width: 80px;
@@ -454,7 +480,7 @@ h5 {
     }
 /*bioGrid and mods for Tablet*/
     .bioGrid {
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto 186px 640px 50px;
     }
     .bio__wiki--title {
         font-size: 16px;
@@ -468,7 +494,7 @@ h5 {
     }
 /*contactGrid and mods for Tablet*/
     .contactGrid {
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto 150px 600px auto;
     }
     .formulario label {
         font-size: 14px;
@@ -496,7 +522,7 @@ h5 {
 }
 @media screen and (max-width: 425px){
     .fullGrid {
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto 110px 820px 264px auto;
     }
     .header__logo {
         width: 50px;
@@ -521,14 +547,14 @@ h5 {
         grid-template-rows: auto 112px 545px auto;
     }
     .musicGrid {
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto 115px 419px auto;
     }
     .music__icon img {
         width: 45px;
         height: 45px;
     }
     .bioGrid {
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto 114px 538px 50px;
     }
     .bio__wiki--title {
         font-size: 16px;
@@ -540,19 +566,22 @@ h5 {
     .band {
         font-size: 12px;
     }
+    .contactGrid {
+        grid-template-rows: auto 90px 537px 40px;
+    }
     .formulario textarea {
         width: 334px;
         height: 266px;
     }
-    .formulario label {
-        font-size: 12px;
+    .form-label {
+        font-size: 14px;
     }
 }
 /*Fin de arreglos medidas intermedias*/    
 /*Celu 375px según Chrome y Responsively*/
 @media screen and (max-width: 375px){
     .fullGrid {
-        grid-template-rows: auto auto auto auto auto;   
+        grid-template-rows: auto 100px 732px 248px 35px;   
     }
     .main__title{
         font-size: 18px;
@@ -582,7 +611,8 @@ h5 {
     }
 /*Music Cel*/
     .musicGrid {
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: 45px 105px 611px 50px;
+        
     }
     .musicLinks a{
         padding: 4px;
@@ -597,7 +627,7 @@ h5 {
     }
 /*Bio Cel*/
     .bioGrid {
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto 100px 520px 50px;
     }
     .bio__wiki--title {
         font-size: 16px;
@@ -611,7 +641,7 @@ h5 {
     }
 /*Contact Cel*/
     .contactGrid {
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto 100px 516px 50px;
     }
     .formulario label {
         font-size: 12px;
@@ -632,6 +662,9 @@ h5 {
     .galleryGrid {
         grid-template-rows: auto 90px 400px auto;
     }
+    .bioGrid {
+        grid-template-rows: auto 90px 520px 50px;
+    }
     .bio__wiki--title {
         font-size: 15px;
     }
@@ -641,6 +674,9 @@ h5 {
     }
     .band {
         font-size: 11px;
+    }
+    .contactGrid {
+        grid-template-rows: auto 90px 414px 50px;
     }
     .formulario textarea {
         width: 239px;
