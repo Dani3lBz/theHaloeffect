@@ -217,13 +217,12 @@ h5 {
 .galleryGrid{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 51px 338px 1652px 74px;
+    grid-template-rows: 51px 338px 1700px 60px;
     grid-template-areas: 
     "cabeza cabeza"
     "pic pic"
     "articulo articulo"
     "pies pies";
-    min-height: 100vh;
 }
 .collage {
     grid-area: articulo;
@@ -343,6 +342,7 @@ h5 {
     "pic pic"
     "articulo articulo"
     "pies pies";
+    min-height: 100vh;
 }
 .musicLinks {
     grid-area: articulo;
@@ -381,15 +381,15 @@ h5 {
         font-size: 18px;
     }
     .galleryGrid {
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto 239px 1331px auto;
     }
     .musicGrid {
         grid-template-rows:auto auto auto auto;
     }
-    .music__icon img {
+    /*.music__icon img {
         width: 45px;
         height: 45px;
-    }
+    }*/
     .bio__wiki--title {
         font-size: 22px;
     }
@@ -439,16 +439,16 @@ h5 {
     
 /*galleryGrid and mods for Tablet*/
     .galleryGrid {
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto 186px 1010px auto;
     }
 /*musicGrid and mods for Tablet*/
     .musicGrid {
         grid-template-rows: auto auto auto auto;
     }
-    .music__icon img {
+    /*.music__icon img {
         width: 45px;
         height: 45px;
-    }
+    }*/
     .musicLinks a{
         padding: 4px;
     }
@@ -518,7 +518,7 @@ h5 {
         margin-left: 11px;
     }
     .galleryGrid {
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto 112px 545px auto;
     }
     .musicGrid {
         grid-template-rows: auto auto auto auto;
@@ -578,7 +578,7 @@ h5 {
     }
 /*Gallery Cel*/
     .galleryGrid {
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto 100px 480px auto;
     }
 /*Music Cel*/
     .musicGrid {
@@ -628,6 +628,9 @@ h5 {
     }
     .videoBox iframe{
         margin-left: 12.5px;
+    }
+    .galleryGrid {
+        grid-template-rows: auto 90px 400px auto;
     }
     .bio__wiki--title {
         font-size: 15px;
