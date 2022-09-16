@@ -5,8 +5,9 @@ html {
 }
 body {
     background-color: black;
-    position: relative;
-    min-height: 100vh;
+    /*position: relative;
+    padding-bottom: 1em;
+    min-height: 100vh;*/
     --bs-body-font-family: 'Raleway', sans-serif;
 }
 .fullGrid {
@@ -68,7 +69,6 @@ nav ul li a:hover {
 }
 .main__title {
     color: hsl(168deg 100% 50%);
-    background-color: black;
     text-align: center;
     font-size: 22px;
     margin: 0px;
@@ -79,9 +79,9 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: flex-end;
     margin-top: auto;
-    position: absolute;
+    /*position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100%;*/
 }
 .foot {
     padding-left: 0%;
@@ -144,6 +144,7 @@ nav ul li a:hover {
 	color: #0da9f1
 }
 .copyright {
+    grid-area: pies;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -155,6 +156,7 @@ h5 {
     font-size: 0.7rem;
 }
 .final {
+    grid-area: pies;
     background: linear-gradient(to top, black, hsl(168deg 100% 50% / 11%));
 }
 /* cierre css para cosas generales */
@@ -209,16 +211,22 @@ h5 {
     display: block;
     text-align: left;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     color: hsl(168deg 100% 50%); 
 }
 .bio__wiki--title {
+    font-size: 18px;
+    text-decoration: none;
     margin: 5px;
+}
+.bio a {
+    --bs-link-hover-color: rgb(115, 236, 115);
 }
 .bio__article {
     margin: 5px;
 }
 .bio__band {
+    font-size: 18px;
     margin: 5px;
 }
 /* hover para el link a Wiki */
@@ -233,7 +241,7 @@ h5 {
 }
 .band {
     color: hsl(168deg 100% 50%);
-    font-size: 18px;
+    font-size: 16px;
 }  
 /* Gallery */
 .galleryGrid{
@@ -360,13 +368,12 @@ h5 {
 .musicGrid {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 51px 338px 1047px 74px;
+    grid-template-rows: 51px 338px 1047px 50px;
     grid-template-areas: 
     "cabeza cabeza"
     "pic pic"
     "articulo articulo"
     "pies pies";
-    min-height: 100vh;
 }
 .musicLinks {
     grid-area: articulo;
@@ -374,10 +381,15 @@ h5 {
     flex-direction: row wrap;
     justify-content: space-around;
     padding: 0px;
+    margin: 50px;
 }
 .musicLinks a {
     padding: 20px;
-}/*FX Music Icons*/
+}
+.music__icon {
+    padding: 10px;
+}
+/*FX Music Icons*/
 .music__icon img {
     width: 80px;
     height: 80px;
@@ -387,11 +399,11 @@ h5 {
     width: 100px;
     height: 100px;
 }/*Fin FX Music Icons*/
-.musicBanner {
+/*.musicBanner {
     display: flex;
     flex-direction: column;
     justify-items: center;
-}
+}*/
 .musicBanner img {
     width: 100%;
     height: auto;
@@ -408,7 +420,11 @@ h5 {
         grid-template-rows: auto 239px 1331px auto;
     }
     .musicGrid {
-        grid-template-rows:auto auto auto auto;
+        grid-template-rows:64px 255px 836px 50px;
+    }
+    .music__icon img {
+        width: 60px;
+        height: 60px;
     }
     .bioGrid {
         grid-template-rows: 51px 238px 538px 55px;
@@ -469,15 +485,15 @@ h5 {
     }
 /*musicGrid and mods for Tablet*/
     .musicGrid {
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: 60px 186px 740px 45px;
     }
-    /*.music__icon img {
+    .music__icon img {
         width: 45px;
         height: 45px;
-    }*/
-    .musicLinks a{
-        padding: 4px;
     }
+    /*.musicLinks a{
+        padding: 4px;
+    }*/
 /*bioGrid and mods for Tablet*/
     .bioGrid {
         grid-template-rows: auto 186px 640px 50px;
@@ -547,7 +563,7 @@ h5 {
         grid-template-rows: auto 112px 545px auto;
     }
     .musicGrid {
-        grid-template-rows: auto 115px 419px auto;
+        grid-template-rows: auto 115px 470px 40px;
     }
     .music__icon img {
         width: 45px;
@@ -584,11 +600,11 @@ h5 {
         grid-template-rows: auto 100px 732px 248px 35px;   
     }
     .main__title{
-        font-size: 18px;
+        font-size: 14px;
     }
-    .header__menuList a {
+    /*.header__menuList a {
         font-size: 12px;
-    } 
+    }*/ 
 /*News Cel*/ 
     .news__pic {
         width: 260px;
@@ -611,19 +627,19 @@ h5 {
     }
 /*Music Cel*/
     .musicGrid {
-        grid-template-rows: 45px 105px 611px 50px;
-        
+        grid-template-rows: auto 115px 443px 40px;
     }
     .musicLinks a{
-        padding: 4px;
+        padding: 15px;
     }
     .musicLinks {
         flex-direction: column;
         align-items: center;
+        margin: 0px;
     }
     .music__icon img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
 /*Bio Cel*/
     .bioGrid {
