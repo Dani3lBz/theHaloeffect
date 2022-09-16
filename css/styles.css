@@ -5,9 +5,9 @@ html {
 }
 body {
     background-color: black;
-    /*position: relative;
-    padding-bottom: 1em;
-    min-height: 100vh;*/
+    position: relative;
+    padding-bottom: 3px;
+    min-height: 100vh;
     --bs-body-font-family: 'Raleway', sans-serif;
 }
 .fullGrid {
@@ -79,9 +79,9 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: flex-end;
     margin-top: auto;
-    /*position: absolute;
+    position: absolute;
     bottom: 0;
-    width: 100%;*/
+    width: 100%;
 }
 .foot {
     padding-left: 0%;
@@ -399,11 +399,6 @@ h5 {
     width: 100px;
     height: 100px;
 }/*Fin FX Music Icons*/
-/*.musicBanner {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-}*/
 .musicBanner img {
     width: 100%;
     height: auto;
@@ -563,7 +558,7 @@ h5 {
         grid-template-rows: auto 112px 545px auto;
     }
     .musicGrid {
-        grid-template-rows: auto 115px 470px 40px;
+        grid-template-rows: auto 115px 434px 40px;
     }
     .music__icon img {
         width: 45px;
@@ -583,7 +578,7 @@ h5 {
         font-size: 12px;
     }
     .contactGrid {
-        grid-template-rows: auto 90px 537px 40px;
+        grid-template-rows: auto 90px 726px 40px;
     }
     .formulario textarea {
         width: 334px;
