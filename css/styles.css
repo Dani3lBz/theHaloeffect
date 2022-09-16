@@ -50,7 +50,7 @@ body {
 .navbar-toggler-icon {
     background-image: none;
 }
-nav ul li a:hover {
+.navbar ul li a:hover {
     background-color: rgb(14, 223, 181);
 }
 .main {
@@ -102,7 +102,6 @@ nav ul li a:hover {
     text-decoration: none;
     padding: 4px 3px;
 }
-
 /*Arreglo para dejar menú footer en un extremo y RRSS en el otro*/
 .relleno {
     margin-left: auto;
@@ -260,7 +259,8 @@ h5 {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 4px;
-}/*Efecto Collage*/
+}
+/*Efecto Collage*/
 .pila1 div img {
     filter: opacity(0.3);
 }
@@ -473,7 +473,6 @@ h5 {
     .news__article--text {
         font-size: 16px;
     }
-    
 /*galleryGrid and mods for Tablet*/
     .galleryGrid {
         grid-template-rows: auto 186px 1010px auto;
@@ -486,9 +485,6 @@ h5 {
         width: 45px;
         height: 45px;
     }
-    /*.musicLinks a{
-        padding: 4px;
-    }*/
 /*bioGrid and mods for Tablet*/
     .bioGrid {
         grid-template-rows: auto 186px 640px 50px;
@@ -597,9 +593,6 @@ h5 {
     .main__title{
         font-size: 14px;
     }
-    /*.header__menuList a {
-        font-size: 12px;
-    }*/ 
 /*News Cel*/ 
     .news__pic {
         width: 260px;
