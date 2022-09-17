@@ -7,7 +7,7 @@ body {
     background-color: black;
     position: relative;
     padding-bottom: 3px;
-    min-height: 100vh;
+    min-height: 97vh;
     --bs-body-font-family: 'Raleway', sans-serif;
 }
 .fullGrid {
@@ -100,6 +100,7 @@ body {
 .foot ul li a {
     color: #00ffcc;
     text-decoration: none;
+    font-size: 14px;
     padding: 4px 3px;
 }
 /*Arreglo para dejar menú footer en un extremo y RRSS en el otro*/
@@ -164,15 +165,15 @@ h5 {
     grid-area: articulo;
 }
 .news__article--title {
-    justify-self: flex-start;
-    padding: 10px;
-    margin: 0%;
+    font-size: 18px;
+    margin: 10px;
+    width: 90%;
     color: whitesmoke;
 }
 .news__article--text {
-    padding: 10px;
-    margin: 0%;
-    width: 100%;
+    font-size: 16px;
+    margin: 15px 5px;
+    width: 95%;
     color: whitesmoke;
 }
 .news__pic {
@@ -216,17 +217,17 @@ h5 {
 .bio__wiki--title {
     font-size: 18px;
     text-decoration: none;
-    margin: 5px;
+    margin: 7px;
 }
 .bio a {
     --bs-link-hover-color: rgb(115, 236, 115);
 }
 .bio__article {
-    margin: 5px;
+    margin: 7px;
 }
 .bio__band {
     font-size: 18px;
-    margin: 5px;
+    margin: 7px;
 }
 /* hover para el link a Wiki */
 .band__links li a:hover {
@@ -234,6 +235,7 @@ h5 {
 }
 .band__links li {
     list-style-type: none;
+    margin: 4px;
 }
 .band__links li a {
     color: whitesmoke;
@@ -425,11 +427,10 @@ h5 {
         grid-template-rows: 51px 238px 538px 55px;
     }
     .bio__wiki--title {
-        font-size: 22px;
+        font-size: 18px;
     }
     .bio__article {
-        font-size: 16px;
-        padding-left: 7px;
+        font-size: 14px;
     }
     .band {
         font-size: 14px;
@@ -459,7 +460,7 @@ h5 {
         font-size: 9px;
     }
     .main__title {
-        font-size: 18px;
+        font-size: 15px;
     }
 /*News mods for Tablet*/
     .news__pic {
@@ -490,14 +491,18 @@ h5 {
         grid-template-rows: auto 186px 640px 50px;
     }
     .bio__wiki--title {
-        font-size: 16px;
+        font-size: 15px;
+        margin: 10px;
     }
     .bio__article {
-        font-size: 14px;
-        padding-left: 7px;
+        font-size: 12px;
+        margin: 10px;
     }
-    .band {
-        font-size: 14px;
+    .bio__band {
+        font-size: 15px;
+    }
+    .band__links a {
+        font-size: 12px;
     }
 /*contactGrid and mods for Tablet*/
     .contactGrid {
@@ -534,14 +539,33 @@ h5 {
     .header__logo {
         width: 50px;
     }
-    .news__pic {
-        margin-left: 33px;
+    .nav-link {
+        font-size: 12px;
     }
-    .news__article--title {
+    .foot ul li a {
+        font-size: 12px;
+    }
+    .bi-facebook {
         font-size: 15px;
     }
+    .bi-twitter {
+        font-size: 15px;
+    }
+    .bi-instagram {
+        font-size: 15px;
+    }
+    .main__title {
+        font-size: 12px;
+    }
+    .news__pic {
+        margin-left: 50px;
+    }
+    .news__article--title {
+        font-size: 12px;
+        margin: 10px;
+    }
     .news__article--text {
-        font-size: 14px;
+        font-size: 10px;
     }
     .iframeSize__Twitter {
         padding: 11%;
@@ -564,13 +588,15 @@ h5 {
         grid-template-rows: auto 114px 538px 50px;
     }
     .bio__wiki--title {
-        font-size: 16px;
+        font-size: 15px;
     }
     .bio__article {
         font-size: 12px;
-        padding-left: 7px;
     }
-    .band {
+    .bio__band {
+        font-size: 15px;
+    }
+    .band__links {
         font-size: 12px;
     }
     .contactGrid {
@@ -581,7 +607,17 @@ h5 {
         height: 266px;
     }
     .form-label {
-        font-size: 14px;
+        font-size: 12px;
+        margin-left: 0px;
+    }
+    .form-control {
+        height: 25px;
+    }
+    #exampleFormControlInput1 {
+        font-size: 10px;
+    }
+    .btn {
+        --bs-btn-font-size: 14px;
     }
 }
 /*Fin de arreglos medidas intermedias*/    
@@ -590,25 +626,22 @@ h5 {
     .fullGrid {
         grid-template-rows: auto 100px 732px 248px 35px;   
     }
-    .main__title{
-        font-size: 14px;
-    }
 /*News Cel*/ 
     .news__pic {
         width: 260px;
-        margin-left: 50px;
+        margin-left: 65px;
     }
     .news__article {
         justify-content: center;
     }
-    .news__article--title {
+    /*.news__article--title {
         font-size: 15px;
         margin-left: auto;
     }
     .news__article--text {
         font-size: 14px;
         margin-left: 5px;
-    }
+    }*/
 /*Gallery Cel*/
     .galleryGrid {
         grid-template-rows: auto 100px 480px auto;
@@ -634,14 +667,13 @@ h5 {
         grid-template-rows: auto 100px 520px 50px;
     }
     .bio__wiki--title {
-        font-size: 16px;
+        font-size: 12px;
     }
     .bio__article {
-        font-size: 12px;
-        padding-left: 7px;
+        font-size: 11px;
     }
-    .band {
-        font-size: 12px;
+    .bio__band {
+        font-size: 13px;
     }
 /*Contact Cel*/
     .contactGrid {
@@ -658,7 +690,7 @@ h5 {
 /*Cel 320px según Chrome*/
 @media screen and (max-width: 320px){
     .news__pic {
-        margin-left: 25px;
+        margin-left: 35px;
     }
     .videoBox iframe{
         margin-left: 12.5px;
@@ -667,17 +699,7 @@ h5 {
         grid-template-rows: auto 90px 400px auto;
     }
     .bioGrid {
-        grid-template-rows: auto 90px 520px 50px;
-    }
-    .bio__wiki--title {
-        font-size: 15px;
-    }
-    .bio__article {
-        font-size: 11px;
-        padding-left: 7px;
-    }
-    .band {
-        font-size: 11px;
+        grid-template-rows: auto 90px 595px 40px;
     }
     .contactGrid {
         grid-template-rows: auto 90px 414px 50px;
