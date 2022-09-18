@@ -408,13 +408,13 @@ h5 {
 /*arreglo para laptop 1024px según Chrome*/
 @media screen and (max-width: 1024px){
     .fullGrid {
-        grid-template-rows:auto 245px 430px 520px auto;
+        grid-template-rows:auto 245px 530px 559px 45px;
     }
     .main__title {
         font-size: 18px;
     }
     .galleryGrid {
-        grid-template-rows: auto 239px 1331px auto;
+        grid-template-rows: auto 239px 1300px 48px;
     }
     .musicGrid {
         grid-template-rows:64px 255px 836px 50px;
@@ -445,7 +445,7 @@ h5 {
 /*Tablet 768px según Chrome y Responsively*/
 @media screen and (max-width: 768px){
     .fullGrid {
-        grid-template-rows: auto 188px 420px 420px auto;
+        grid-template-rows: auto 188px 518px 420px auto;
     }
     .header__logo {
         width: 80px;
@@ -476,7 +476,7 @@ h5 {
     }
 /*galleryGrid and mods for Tablet*/
     .galleryGrid {
-        grid-template-rows: auto 186px 1010px auto;
+        grid-template-rows: auto 186px 978x 40px;
     }
 /*musicGrid and mods for Tablet*/
     .musicGrid {
@@ -534,7 +534,7 @@ h5 {
 }
 @media screen and (max-width: 425px){
     .fullGrid {
-        grid-template-rows: auto 110px 820px 264px auto;
+        grid-template-rows: auto 110px 830px 300px auto;
     }
     .header__logo {
         width: 50px;
@@ -575,7 +575,7 @@ h5 {
         margin-left: 11px;
     }
     .galleryGrid {
-        grid-template-rows: auto 112px 545px auto;
+        grid-template-rows: auto 112px 545px 33px;
     }
     .musicGrid {
         grid-template-rows: auto 115px 434px 40px;
@@ -624,7 +624,7 @@ h5 {
 /*Celu 375px según Chrome y Responsively*/
 @media screen and (max-width: 375px){
     .fullGrid {
-        grid-template-rows: auto 100px 732px 248px 35px;   
+        grid-template-rows: auto 100px 772px 248px 35px;   
     }
 /*News Cel*/ 
     .news__pic {
@@ -644,7 +644,7 @@ h5 {
     }*/
 /*Gallery Cel*/
     .galleryGrid {
-        grid-template-rows: auto 100px 480px auto;
+        grid-template-rows: auto 100px 480px 33px;
     }
 /*Music Cel*/
     .musicGrid {
@@ -689,6 +689,9 @@ h5 {
 }
 /*Cel 320px según Chrome*/
 @media screen and (max-width: 320px){
+    .fullGrid {
+        grid-template-rows: auto 100px 772px 200px 35px;   
+    }
     .news__pic {
         margin-left: 35px;
     }
@@ -696,7 +699,7 @@ h5 {
         margin-left: 12.5px;
     }
     .galleryGrid {
-        grid-template-rows: auto 90px 400px auto;
+        grid-template-rows: auto 90px 400px 33px;
     }
     .bioGrid {
         grid-template-rows: auto 90px 595px 40px;
