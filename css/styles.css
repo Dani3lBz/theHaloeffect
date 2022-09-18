@@ -7,7 +7,7 @@ body {
     background-color: black;
     position: relative;
     padding-bottom: 3px;
-    min-height: 97vh;
+    min-height: 100vh;
     --bs-body-font-family: 'Raleway', sans-serif;
 }
 .fullGrid {
@@ -94,7 +94,7 @@ body {
     background: linear-gradient(to bottom, black, hsl(168deg 100% 50% / 10%));
     text-decoration: none;
     list-style-type: none;
-    padding-inline-start: 0%;
+    padding-inline-start: 1%;
     margin: 0%;
 }
 .foot ul li a {
@@ -262,6 +262,9 @@ h5 {
     justify-content: center;
     padding: 0 4px;
 }
+.primera:not(.pila) {
+    margin-top: 50px;
+}
 /*Efecto Collage*/
 .pila1 div img {
     filter: opacity(0.3);
@@ -407,6 +410,9 @@ h5 {
 }
 /*arreglo para laptop 1024px según Chrome*/
 @media screen and (max-width: 1024px){
+    .foot ul li a {
+        font-size: 12px;
+    }
     .fullGrid {
         grid-template-rows:auto 245px 530px 559px 45px;
     }
@@ -543,7 +549,7 @@ h5 {
         font-size: 12px;
     }
     .foot ul li a {
-        font-size: 12px;
+        font-size: 10px;
     }
     .bi-facebook {
         font-size: 15px;
@@ -600,7 +606,7 @@ h5 {
         font-size: 12px;
     }
     .contactGrid {
-        grid-template-rows: auto 90px 726px 40px;
+        grid-template-rows: auto 105px 732px 33px;
     }
     .formulario textarea {
         width: 334px;
@@ -634,14 +640,6 @@ h5 {
     .news__article {
         justify-content: center;
     }
-    /*.news__article--title {
-        font-size: 15px;
-        margin-left: auto;
-    }
-    .news__article--text {
-        font-size: 14px;
-        margin-left: 5px;
-    }*/
 /*Gallery Cel*/
     .galleryGrid {
         grid-template-rows: auto 100px 480px 33px;
