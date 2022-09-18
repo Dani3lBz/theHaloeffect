@@ -339,6 +339,7 @@ h5 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 30px;
     color: #00ffcc;
 }
 .btn-primary {
@@ -356,9 +357,6 @@ h5 {
 }
 .formulario {
     grid-area: articulo;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
     color: hsl(168deg 100% 50%);
 }
 .formulario textarea {
