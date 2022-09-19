@@ -1,14 +1,14 @@
 /* css general logo nav menu footer */ 
 html {
     font-size: 62,5%;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Quicksand', sans-serif;
 }
 body {
     background-color: black;
     position: relative;
     padding-bottom: 3px;
     min-height: 100vh;
-    --bs-body-font-family: 'Raleway', sans-serif;
+    --bs-body-font-family: 'Raleway', 'Quicksand', sans-serif;
 }
 .fullGrid {
    display: grid;
@@ -100,8 +100,8 @@ body {
 .foot ul li a {
     color: #00ffcc;
     text-decoration: none;
-    font-size: 14px;
-    padding: 4px 3px;
+    font-size: 21px;
+    padding: 4px 6px;
 }
 /*Arreglo para dejar menú footer en un extremo y RRSS en el otro*/
 .relleno {
@@ -171,6 +171,7 @@ h5 {
     color: whitesmoke;
 }
 .news__article--text {
+    font-family: 'Quicksand';
     font-size: 16px;
     margin: 15px 5px;
     width: 95%;
@@ -223,6 +224,7 @@ h5 {
     --bs-link-hover-color: rgb(115, 236, 115);
 }
 .bio__article {
+    font-family: 'Quicksand';
     margin: 7px;
 }
 .bio__band {
@@ -238,6 +240,7 @@ h5 {
     margin: 4px;
 }
 .band__links li a {
+    font-family: 'Quicksand';
     color: whitesmoke;
 }
 .band {
@@ -408,9 +411,6 @@ h5 {
 }
 /*arreglo para laptop 1024px según Chrome*/
 @media screen and (max-width: 1024px){
-    .foot ul li a {
-        font-size: 12px;
-    }
     .fullGrid {
         grid-template-rows:auto 245px 530px 559px 45px;
     }
@@ -450,6 +450,29 @@ h5 {
         margin-left: 18px;
     }
 }
+/*tamaño intermedio para mejor responsive"*/
+@media screen and (max-width: 991px){
+    .bioGrid {
+        grid-template-rows: auto 186px 640px 50px;
+    }
+	.bio__wiki--title {
+        font-size: 15px;
+        margin: 10px;
+    }
+    .bio__article {
+        font-size: 12px;
+        margin: 10px;
+    }
+    .bio__band {
+        font-size: 15px;
+    }
+    .band__links a {
+        font-size: 12px;
+    }
+    .contactGrid {
+        grid-template-rows: auto 248px 600px auto;
+    }
+}
 /*Tablet 768px según Chrome y Responsively*/
 @media screen and (max-width: 768px){
     .fullGrid {
@@ -459,9 +482,6 @@ h5 {
         width: 80px;
     }
     .header__menuList a {
-        font-size: 14px;
-    }
-    .footer__links li {
         font-size: 14px;
     }
     .copyright{
@@ -547,7 +567,7 @@ h5 {
         font-size: 12px;
     }
     .foot ul li a {
-        font-size: 10px;
+        font-size: 16px;
     }
     .bi-facebook {
         font-size: 15px;
