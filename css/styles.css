@@ -52,6 +52,7 @@ body {
 }
 .navbar ul li a:hover {
     background-color: rgb(14, 223, 181);
+    transition: 1.5s;
 }
 .main {
     grid-area: pic;
