@@ -97,11 +97,11 @@ body {
     padding-inline-start: 1%;
     margin: 0%;
 }
-.foot ul li a {
+.atajo {
     color: #00ffcc;
     text-decoration: none;
     font-size: 21px;
-    padding: 4px 6px;
+    padding: 4px 12px;
 }
 /*Arreglo para dejar menú footer en un extremo y RRSS en el otro*/
 .relleno {
@@ -113,20 +113,20 @@ body {
 /*Fin del arreglo*/
 /*RRSS Icons*/
 .bi-facebook {
-    font-size: 20px;
+    font-size: 21px;
     text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 10px;
     color: #00ffcc;
 }
 .bi-facebook:hover {
 	color: #4f7ee4;
 }
 .bi-instagram {
-    font-size: 20px;
+    font-size: 21px;
     text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 10px;
     color: #00ffcc;
 }
 .bi-instagram:hover {
@@ -134,10 +134,10 @@ body {
 	box-shadow: 0 15px 40px 1px rgba(0,0,0,0.3);
 }
 .bi-twitter {	
-	font-size: 20px;
+	font-size: 21px;
 	text-align: center;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 15px;
+	margin-right: 10px;
 	color: #00ffcc;
 }
 .bi-twitter:hover {
@@ -508,7 +508,10 @@ h5 {
     }
 /*musicGrid and mods for Tablet*/
     .musicGrid {
-        grid-template-rows: 60px 186px 740px 45px;
+        grid-template-rows: auto 186px 780px 45px;
+    }
+    .musicLinks {
+        margin-top: 70px;
     }
 /*bioGrid and mods for Tablet*/
     .bioGrid {
@@ -566,17 +569,24 @@ h5 {
     .nav-link {
         font-size: 12px;
     }
-    .foot ul li a {
+    .atajo {
         font-size: 16px;
+        padding: 4px 9px;
     }
     .bi-facebook {
         font-size: 15px;
+        margin-left: 12px;
+        margin-right: 8px;
     }
     .bi-twitter {
         font-size: 15px;
+        margin-left: 12px;
+        margin-right: 8px;
     }
     .bi-instagram {
         font-size: 15px;
+        margin-left: 12px;
+        margin-right: 8px;
     }
     .main__title {
         font-size: 12px;
@@ -733,5 +743,8 @@ h5 {
     .formulario textarea {
         width: 239px;
         height: 170px;
+    }
+    .btn {
+        --bs-btn-font-size: 10px;
     }
 }
