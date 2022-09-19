@@ -267,21 +267,21 @@ h5 {
 }
 /*Efecto Collage*/
 .pila1 div img {
-    filter: opacity(0.3);
+    filter: opacity(0.6);
 }
 .pila1 div img:hover {
     filter: none;
     transform: scale(2);
 }
 .pila2 div img {
-    filter: opacity(0.3);
+    filter: opacity(0.6);
 }
 .pila2 div img:hover {
     filter: none;
     transform: scale(2);
 }
 .pila3 div img {
-    filter: opacity(0.3);
+    filter: opacity(0.6);
 }
 .pila3 div img:hover {
     filter: none;
@@ -340,6 +340,7 @@ h5 {
     flex-direction: column;
     justify-content: center;
     margin-top: 30px;
+    margin-bottom: 0%;
     color: #00ffcc;
 }
 .btn-primary {
