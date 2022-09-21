@@ -1,0 +1,193 @@
+.header {
+    grid-area: cabeza;
+}
+/*Nav mods*/
+.container-fluid {
+    padding: 0px 5px;
+}
+.header__logo {
+    width: 80px;
+}
+.navbar-toggler {
+    padding: 0%;
+    margin-top: 10px;
+}
+.bg-grad {
+    background: linear-gradient(to top, black, $gradColor);
+    --bs-navbar-color: #00ffcc;
+    --bs-navbar-active-color: #00ffcc81;
+    --bs-nav-link-hover-color: #00ffcc;
+}
+.navbar-dark {
+    --bs-navbar-toggler-border-color: #198754;
+    --bs-navbar-hover-color: black;
+    margin: 0%;
+    padding: 0%;
+}
+.navbar-toggler-icon {
+    background-image: none;
+}
+.navbar ul li a:hover {
+    background-color: rgb(14, 223, 181);
+    transition: 1.5s;
+}
+.main {
+    grid-area: pic;
+}
+.caratula {
+    display: flex;
+    flex-direction: column;
+}
+.main__pics {
+    align-items: center;
+    width: 100%;
+    height: autopx;
+    margin: 0%;
+    border: 0%;
+}
+.main__title {
+    color: #00ffcc;
+    text-align: center;
+    font-size: 22px;
+    margin: 0px;
+}
+.pie {
+    grid-area: pies;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.foot {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+.footer__links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient(to bottom, black, $gradColor);
+    text-decoration: none;
+    list-style-type: none;
+    padding-inline-start: 1%;
+    margin: 0%;
+}
+.atajo {
+    color: #00ffcc;
+    text-decoration: none;
+    font-size: 21px;
+    padding: 4px 12px;
+}
+.atajo:hover {
+    color: whitesmoke;
+}
+/*Arreglo para dejar menú footer en un extremo y RRSS en el otro*/
+.relleno {
+    margin-left: auto;
+}
+.fill {
+    display: none;
+}
+/*Fin del arreglo*/
+/*RRSS Icons*/
+.bi-facebook {
+    font-size: 21px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 10px;
+    color: #00ffcc;
+}
+.bi-facebook:hover {
+	color: #4f7ee4;
+}
+.bi-instagram {
+    font-size: 21px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 10px;
+    color: #00ffcc;
+}
+.bi-instagram:hover {
+    background: radial-gradient(circle at 30% 110%, #ffdb8b 0%, #ee653d 25%, #d42e81 50%, #a237b6 75%, #3e5fbc 100%);
+	box-shadow: 0 15px 40px 1px rgba(0,0,0,0.3);
+}
+.bi-twitter {	
+	font-size: 21px;
+	text-align: center;
+	margin-left: 15px;
+	margin-right: 10px;
+	color: #00ffcc;
+}
+.bi-twitter:hover {
+	color: #0da9f1
+}
+.copyright {
+    grid-area: pies;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0%;
+    padding: 0px;
+    color: #00ffcc;
+}
+h5 {
+    font-size: 0.7rem;
+}
+.final {
+    grid-area: pies;
+    background: linear-gradient(to top, black, $gradColor);
+}
+/*arreglo para laptop 1024px según Chrome*/
+@media screen and (max-width: 1024px){
+    .main__title {
+        font-size: 18px;
+    }
+}
+/*Tablet 768px según Chrome y Responsively*/
+@media screen and (max-width: 768px){
+    .header__logo {
+        width: 80px;
+    }
+    .header__menuList a {
+        font-size: 14px;
+    }
+    .copyright{
+        font-size: 9px;
+    }
+    .main__title {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 425px){
+    .header__logo {
+        width: 50px;
+    }
+    .nav-link {
+        font-size: 12px;
+    }
+    .atajo {
+        font-size: 16px;
+        padding: 4px 9px;
+    }
+    .bi-facebook {
+        font-size: 15px;
+        margin-left: 12px;
+        margin-right: 8px;
+    }
+    .bi-twitter {
+        font-size: 15px;
+        margin-left: 12px;
+        margin-right: 8px;
+    }
+    .bi-instagram {
+        font-size: 15px;
+        margin-left: 12px;
+        margin-right: 8px;
+    }
+    .main__title {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,19 @@
+@import "vars";
+@import "menu";
+@import "index";
+@import "bio";
+@import "gallery";
+@import "contact";
+@import "music";
+
+html {
+    font-size: 62,5%;
+    font-family: 'Raleway', 'Quicksand', sans-serif;
+}
+body {
+    background-color: black;
+    position: relative;
+    padding-bottom: 3px;
+    min-height: 100vh;
+    --bs-body-font-family: 'Raleway', 'Quicksand', sans-serif;
+}

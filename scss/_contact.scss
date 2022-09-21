@@ -1,0 +1,135 @@
+.contactGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 51px 338px 521px 74px;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "pic pic"
+    "articulo articulo"
+    "pies pies";
+}
+.form-control {
+    width: auto;
+}
+.form-label {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.mb-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 0%;
+    color: #00ffcc;
+}
+.btn-primary {
+    color: #00ffcc;
+    background: linear-gradient(to top, black, $gradColor);
+    margin: 40px;
+    --bs-btn-border-color: #000000;
+    --bs-btn-hover-color: rgb(10, 10, 10);
+    --bs-btn-hover-bg: #00ffcc;
+    --bs-btn-hover-border-color: #1c3517;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: rgb(19, 226, 99);
+    --bs-btn-active-bg: #00ffcc83;
+    --bs-btn-active-border-color: #30343a;
+}
+.formulario {
+    grid-area: articulo;
+    color: #00ffcc;
+}
+.formulario textarea {
+    width: 422px;
+    height: 284px;
+}
+.formulario label {
+    font-size: 22px;
+    margin: 22px;
+}
+/*arreglo para laptop 1024px según Chrome*/
+@media screen and (max-width: 1024px){
+    .contactGrid {
+        grid-template-rows: 51px 240px 600px 60px;
+    }
+    .formulario label {
+        font-size: 18px;
+    }
+    .form-label {
+        font-size: 14px;
+        margin-left: 18px;
+    }
+}
+/*tamaño intermedio para mejor responsive"*/
+@media screen and (max-width: 991px){
+    .contactGrid {
+        grid-template-rows: auto 248px 600px auto;
+    }
+}
+/*Tablet 768px según Chrome y Responsively*/
+@media screen and (max-width: 768px){
+    /*contactGrid and mods for Tablet*/
+    .contactGrid {
+        grid-template-rows: auto 150px 600px auto;
+    }
+    .formulario label {
+        font-size: 14px;
+    }
+    .formulario textarea {
+        width: 372px;
+        height: 218px;
+    }
+}
+@media screen and (max-width: 425px){
+    .contactGrid {
+        grid-template-rows: auto 105px 732px 33px;
+    }
+    .formulario textarea {
+        width: 334px;
+        height: 266px;
+    }
+    .form-label {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    .form-control {
+        height: 25px;
+    }
+    #exampleFormControlInput1 {
+        font-size: 10px;
+    }
+    .btn {
+        --bs-btn-font-size: 14px;
+    }
+}
+/*Celu 375px según Chrome y Responsively*/
+@media screen and (max-width: 375px){
+    .contactGrid {
+        grid-template-rows: auto 100px 516px 50px;
+    }
+    .formulario label {
+        font-size: 12px;
+    }
+    .form-label {
+        font-size: 9px;
+        margin-left: 18px;
+    }
+    .formulario textarea {
+        width: 300px;
+        height: 185px;
+    }
+}
+/*Cel 320px según Chrome*/
+@media screen and (max-width: 320px){
+    .contactGrid {
+        grid-template-rows: auto 90px 414px 50px;
+    }
+    .formulario textarea {
+        width: 239px;
+        height: 170px;
+    }
+    .btn {
+        --bs-btn-font-size: 10px;
+    }
+}

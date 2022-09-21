@@ -1,0 +1,107 @@
+/* Gallery */
+.galleryGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 51px 338px 1700px 60px;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "pic pic"
+    "articulo articulo"
+    "pies pies";
+}
+.collage {
+    grid-area: articulo;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 4px;
+}
+.primera:not(.pila) {
+    margin-top: 50px;
+}
+/*Efecto Collage*/
+.pila1 div img {
+    filter: opacity(0.6);
+}
+.pila1 div img:hover {
+    filter: none;
+    transform: scale(2);
+    transition: 0.8s;
+}
+.pila2 div img {
+    filter: opacity(0.6);
+}
+.pila2 div img:hover {
+    filter: none;
+    transform: scale(2);
+    transition: 0.8s;
+}
+.pila3 div img {
+    filter: opacity(0.6);
+}
+.pila3 div img:hover {
+    filter: none;
+    transform: scale(2);
+    transition: 0.8s;
+}
+/*Fin Efecto Collage*/
+.pila1 {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.pila1 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.pila2 {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.pila2 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.pila3 {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.pila3 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+/*arreglo para laptop 1024px según Chrome*/
+@media screen and (max-width: 1024px){
+    .galleryGrid {
+        grid-template-rows: auto 239px 1300px 48px;
+    }
+}
+/*Tablet 768px según Chrome y Responsively*/
+@media screen and (max-width: 768px){
+    /*galleryGrid and mods for Tablet*/
+    .galleryGrid {
+        grid-template-rows: auto 186px 978x 40px;
+    }
+}
+@media screen and (max-width: 425px){
+    .galleryGrid {
+        grid-template-rows: auto 112px 545px 33px;
+    }
+}
+/*Celu 375px según Chrome y Responsively*/
+@media screen and (max-width: 375px){
+    .galleryGrid {
+        grid-template-rows: auto 100px 480px 33px;
+    }
+}
+/*Cel 320px según Chrome*/
+@media screen and (max-width: 320px){
+    .galleryGrid {
+        grid-template-rows: auto 90px 400px 33px;
+    }
+}

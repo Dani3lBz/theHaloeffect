@@ -1,5 +1,5 @@
 /* css general logo nav menu footer */ 
-html {
+/*html {
     font-size: 62,5%;
     font-family: 'Raleway', 'Quicksand', sans-serif;
 }
@@ -25,7 +25,7 @@ body {
     grid-area: cabeza;
 }
 /*Nav mods*/
-.container-fluid {
+/*.container-fluid {
     padding: 0px 5px;
 }
 .header__logo {
@@ -69,7 +69,7 @@ body {
     border: 0%;
 }
 .main__title {
-    color: hsl(168deg 100% 50%);
+    color: #00ffcc;
     text-align: center;
     font-size: 22px;
     margin: 0px;
@@ -108,7 +108,7 @@ body {
     color: whitesmoke;
 }
 /*Arreglo para dejar menú footer en un extremo y RRSS en el otro*/
-.relleno {
+/*.relleno {
     margin-left: auto;
 }
 .fill {
@@ -116,7 +116,7 @@ body {
 }
 /*Fin del arreglo*/
 /*RRSS Icons*/
-.bi-facebook {
+/*.bi-facebook {
     font-size: 21px;
     text-align: center;
     margin-left: 15px;
@@ -165,7 +165,7 @@ h5 {
 }
 /* cierre css para cosas generales */
 /* News */
-.news {
+/*.news {
     grid-area: articulo;
 }
 .news__article--title {
@@ -197,7 +197,7 @@ h5 {
     --bs-aspect-ratio: 50%;
 }
 /* Bio */
-.bioGrid {
+/*.bioGrid {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 51px 338px 521px 74px;
@@ -236,7 +236,7 @@ h5 {
     margin: 7px;
 }
 /* hover para el link a Wiki */
-.band__links li a:hover {
+/*.band__links li a:hover {
     font-size: 150%;
 }
 .band__links li {
@@ -252,7 +252,7 @@ h5 {
     font-size: 16px;
 }  
 /* Gallery */
-.galleryGrid{
+/*.galleryGrid{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 51px 338px 1700px 60px;
@@ -273,7 +273,7 @@ h5 {
     margin-top: 50px;
 }
 /*Efecto Collage*/
-.pila1 div img {
+/*.pila1 div img {
     filter: opacity(0.6);
 }
 .pila1 div img:hover {
@@ -298,7 +298,7 @@ h5 {
     transition: 0.8s;
 }
 /*Fin Efecto Collage*/
-.pila1 {
+/*.pila1 {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
@@ -329,7 +329,7 @@ h5 {
     width: 100%;
 }
 /* Contact */
-.contactGrid {
+/*.contactGrid {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 51px 338px 521px 74px;
@@ -380,7 +380,7 @@ h5 {
     margin: 22px;
 }
 /* Music */
-.musicGrid {
+/*.musicGrid {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 51px 338px 1047px 50px;
@@ -404,7 +404,7 @@ h5 {
     padding: 10px;
 }
 /*FX Music Icons*/
-.music__icon img {
+/*.music__icon img {
     width: 80px;
     height: 80px;
     transition: 0.5s;
@@ -413,12 +413,12 @@ h5 {
     width: 100px;
     height: 100px;
 }/*Fin FX Music Icons*/
-.musicBanner img {
+/*.musicBanner img {
     width: 100%;
     height: auto;
 }
 /*arreglo para laptop 1024px según Chrome*/
-@media screen and (max-width: 1024px){
+/*@media screen and (max-width: 1024px){
     .fullGrid {
         grid-template-rows:auto 245px 530px 559px 45px;
     }
@@ -459,7 +459,7 @@ h5 {
     }
 }
 /*tamaño intermedio para mejor responsive"*/
-@media screen and (max-width: 991px){
+/*@media screen and (max-width: 991px){
     .bioGrid {
         grid-template-rows: auto 186px 640px 50px;
     }
@@ -482,7 +482,7 @@ h5 {
     }
 }
 /*Tablet 768px según Chrome y Responsively*/
-@media screen and (max-width: 768px){
+/*@media screen and (max-width: 768px){
     .fullGrid {
         grid-template-rows: auto 188px 518px 442px auto;
     }
@@ -499,7 +499,7 @@ h5 {
         font-size: 15px;
     }
 /*News mods for Tablet*/
-    .news__pic {
+    /*.news__pic {
         width: 333px;
         padding-top: 15px;
         margin-left: -17px;
@@ -511,18 +511,18 @@ h5 {
         font-size: 16px;
     }
 /*galleryGrid and mods for Tablet*/
-    .galleryGrid {
+    /*.galleryGrid {
         grid-template-rows: auto 186px 978x 40px;
     }
 /*musicGrid and mods for Tablet*/
-    .musicGrid {
+    /*.musicGrid {
         grid-template-rows: auto 186px 780px 45px;
     }
     .musicLinks {
         margin-top: 70px;
     }
 /*bioGrid and mods for Tablet*/
-    .bioGrid {
+    /*.bioGrid {
         grid-template-rows: auto 186px 640px 50px;
     }
     .bio__wiki--title {
@@ -540,7 +540,7 @@ h5 {
         font-size: 12px;
     }
 /*contactGrid and mods for Tablet*/
-    .contactGrid {
+    /*.contactGrid {
         grid-template-rows: auto 150px 600px auto;
     }
     .formulario label {
@@ -552,7 +552,7 @@ h5 {
     }
 }   
 /*Arreglo para medidas intermedias según Chrome*/
-@media screen and (max-width: 657px){
+/*@media screen and (max-width: 657px){
     .fullGrid {
         grid-template-rows: auto auto auto auto auto;
     }
@@ -667,12 +667,12 @@ h5 {
 }
 /*Fin de arreglos medidas intermedias*/    
 /*Celu 375px según Chrome y Responsively*/
-@media screen and (max-width: 375px){
+/*@media screen and (max-width: 375px){
     .fullGrid {
         grid-template-rows: auto 100px 833px 280px auto;   
     }
 /*News Cel*/ 
-    .news__pic {
+   /* .news__pic {
         width: 260px;
         margin-left: 65px;
     }
@@ -680,11 +680,11 @@ h5 {
         justify-content: center;
     }
 /*Gallery Cel*/
-    .galleryGrid {
+    /*.galleryGrid {
         grid-template-rows: auto 100px 480px 33px;
     }
 /*Music Cel*/
-    .musicGrid {
+   /* .musicGrid {
         grid-template-rows: auto 115px 443px 40px;
     }
     .musicLinks a{
@@ -700,7 +700,7 @@ h5 {
         height: 40px;
     }
 /*Bio Cel*/
-    .bioGrid {
+    /*.bioGrid {
         grid-template-rows: auto 100px 520px 50px;
     }
     .bio__wiki--title {
@@ -713,7 +713,7 @@ h5 {
         font-size: 13px;
     }
 /*Contact Cel*/
-    .contactGrid {
+   /* .contactGrid {
         grid-template-rows: auto 100px 516px 50px;
     }
     .formulario label {
@@ -729,7 +729,7 @@ h5 {
     }
 }
 /*Cel 320px según Chrome*/
-@media screen and (max-width: 320px){
+/*@media screen and (max-width: 320px){
     .fullGrid {
         grid-template-rows: auto 100px 833px 280px auto;   
     }

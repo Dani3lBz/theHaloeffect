@@ -1,0 +1,148 @@
+.bioGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 51px 338px 521px 74px;
+    grid-template-areas: 
+    "cabeza cabeza"
+    "pic pic"
+    "articulo articulo"
+    "pies pies";
+}
+.bio {
+    text-align: left;
+    display: block;
+    color: whitesmoke;
+}
+.bio__wiki {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-size: 18px;
+    color: #00ffcc; 
+}
+.bio__wiki--title {
+    font-size: 18px;
+    text-decoration: none;
+    margin: 7px;
+}
+.bio a {
+    --bs-link-hover-color: #73ec73;
+}
+.bio__article {
+    font-family: 'Quicksand';
+    margin: 7px;
+}
+.bio__band {
+    font-size: 18px;
+    margin: 7px;
+}
+/* hover para el link a Wiki */
+.band__links li a:hover {
+    font-size: 150%;
+}
+.band__links li {
+    list-style-type: none;
+    margin: 4px;
+}
+.band__links li a {
+    font-family: 'Quicksand';
+    color: whitesmoke;
+}
+.band {
+    color: #00ffcc;
+    font-size: 16px;
+}
+/*arreglo para laptop 1024px según Chrome*/
+@media screen and (max-width: 1024px){
+    .bioGrid {
+        grid-template-rows: 51px 238px 538px 55px;
+    }
+    .bio__wiki--title {
+        font-size: 18px;
+    }
+    .bio__article {
+        font-size: 14px;
+    }
+    .band {
+        font-size: 14px;
+    }
+}
+/*tamaño intermedio para mejor responsive"*/
+@media screen and (max-width: 991px){
+    .bioGrid {
+        grid-template-rows: auto 186px 640px 50px;
+    }
+	.bio__wiki--title {
+        font-size: 15px;
+        margin: 10px;
+    }
+    .bio__article {
+        font-size: 12px;
+        margin: 10px;
+    }
+    .bio__band {
+        font-size: 15px;
+    }
+    .band__links a {
+        font-size: 12px;
+    }
+}
+/*Tablet 768px según Chrome y Responsively*/
+@media screen and (max-width: 768px){
+    /*bioGrid and mods for Tablet*/
+    .bioGrid {
+        grid-template-rows: auto 186px 640px 50px;
+    }
+    .bio__wiki--title {
+        font-size: 15px;
+        margin: 10px;
+    }
+    .bio__article {
+        font-size: 12px;
+        margin: 10px;
+    }
+    .bio__band {
+        font-size: 15px;
+    }
+    .band__links a {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 425px){
+    .bioGrid {
+        grid-template-rows: auto 114px 538px 50px;
+    }
+    .bio__wiki--title {
+        font-size: 15px;
+    }
+    .bio__article {
+        font-size: 12px;
+    }
+    .bio__band {
+        font-size: 15px;
+    }
+    .band__links {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 375px){
+    /*Bio Cel*/
+    .bioGrid {
+        grid-template-rows: auto 100px 520px 50px;
+    }
+    .bio__wiki--title {
+        font-size: 12px;
+    }
+    .bio__article {
+        font-size: 11px;
+    }
+    .bio__band {
+        font-size: 13px;
+    }
+}
+/*Cel 320px según Chrome*/
+@media screen and (max-width: 320px){
+    .bioGrid {
+        grid-template-rows: auto 90px 595px 40px;
+    }
+}
