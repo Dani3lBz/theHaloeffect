@@ -12,55 +12,56 @@
     text-align: left;
     display: block;
     color: $textColor;
+    a {
+        display: block;
+        text-align: left;
+        text-decoration: none;
+        font-size: 18px;
+        color: #00ffcc;
+        &:hover {
+            --bs-link-hover-color: #73ec73;
+        }
+    }
+    h3 {
+        font-size: 18px;
+        text-decoration: none;
+        margin: 7px;
+    }
+    article {
+        font-family: 'Quicksand';
+        margin: 7px;
+    }
 }
-.bio__wiki {
-    display: block;
-    text-align: left;
-    text-decoration: none;
-    font-size: 18px;
-    color: #00ffcc; 
-}
-.bio__wiki--title {
-    font-size: 18px;
-    text-decoration: none;
-    margin: 7px;
-}
-.bio a {
-    --bs-link-hover-color: #73ec73;
-}
-.bio__article {
-    font-family: 'Quicksand';
-    margin: 7px;
-}
-.bio__band {
-    font-size: 18px;
-    margin: 7px;
-}
-/* hover para el link a Wiki */
-.band__links li a:hover {
-    font-size: 150%;
-}
-.band__links li {
-    list-style-type: none;
-    margin: 4px;
-}
-.band__links li a {
-    font-family: 'Quicksand';
-    color: $textColor;
-}
-.band {
+.band {    
     color: #00ffcc;
     font-size: 16px;
+    h3 {
+        font-size: 18px;
+        margin: 7px;
+    }
+    ul{
+        li {
+            list-style-type: none;
+            margin: 4px;
+            a {
+                font-family: 'Quicksand';
+                color: $textColor;
+                &:hover {
+                    font-size: 150%;
+                }
+            }
+        }
+    }
 }
 /*arreglo para laptop 1024px según Chrome*/
 @media screen and (max-width: 1024px){
     .bioGrid {
         grid-template-rows: 51px 238px 538px 55px;
     }
-    .bio__wiki--title {
+    .bio h3{
         font-size: 18px;
     }
-    .bio__article {
+    .bio article {
         font-size: 14px;
     }
     .band {
@@ -72,39 +73,38 @@
     .bioGrid {
         grid-template-rows: auto 186px 640px 50px;
     }
-	.bio__wiki--title {
+	.bio h3 {
         font-size: 15px;
         margin: 10px;
     }
-    .bio__article {
+    .bio article {
         font-size: 12px;
         margin: 10px;
     }
-    .bio__band {
+    .band h3 {
         font-size: 15px;
     }
-    .band__links a {
+    .band ul li a {
         font-size: 12px;
     }
 }
 /*Tablet 768px según Chrome y Responsively*/
 @media screen and (max-width: 768px){
-    /*bioGrid and mods for Tablet*/
     .bioGrid {
         grid-template-rows: auto 186px 640px 50px;
     }
-    .bio__wiki--title {
+    .bio h3 {
         font-size: 15px;
         margin: 10px;
     }
-    .bio__article {
+    .bio article {
         font-size: 12px;
         margin: 10px;
     }
-    .bio__band {
+    .band h3 {
         font-size: 15px;
     }
-    .band__links a {
+    .band ul li a {
         font-size: 12px;
     }
 }
@@ -112,16 +112,16 @@
     .bioGrid {
         grid-template-rows: auto 114px 538px 50px;
     }
-    .bio__wiki--title {
+    .bio h3 {
         font-size: 15px;
     }
-    .bio__article {
+    .bio article {
         font-size: 12px;
     }
-    .bio__band {
+    .band h3 {
         font-size: 15px;
     }
-    .band__links {
+    .band ul li a {
         font-size: 12px;
     }
 }
@@ -130,13 +130,13 @@
     .bioGrid {
         grid-template-rows: auto 100px 520px 50px;
     }
-    .bio__wiki--title {
+    .bio h3 {
         font-size: 12px;
     }
-    .bio__article {
+    .bio article {
         font-size: 11px;
     }
-    .bio__band {
+    .band h3 {
         font-size: 13px;
     }
 }
