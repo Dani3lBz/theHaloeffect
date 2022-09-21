@@ -11,7 +11,7 @@
 .bio {
     text-align: left;
     display: block;
-    color: whitesmoke;
+    color: $textColor;
 }
 .bio__wiki {
     display: block;
@@ -46,7 +46,7 @@
 }
 .band__links li a {
     font-family: 'Quicksand';
-    color: whitesmoke;
+    color: $textColor;
 }
 .band {
     color: #00ffcc;
