@@ -364,8 +364,14 @@
 .primera:not(.pila) {
   margin-top: 50px; }
 
-/*Efecto Collage*/
+/*Efecto Collage Bucles*/
 .pila1 div img {
+  filter: opacity(0.6); }
+
+.pila2 div img {
+  filter: opacity(0.6); }
+
+.pila3 div img {
   filter: opacity(0.6); }
 
 .pila1 div img:hover {
@@ -373,47 +379,42 @@
   transform: scale(2);
   transition: 0.8s; }
 
-.pila2 div img {
-  filter: opacity(0.6); }
-
 .pila2 div img:hover {
   filter: none;
   transform: scale(2);
   transition: 0.8s; }
-
-.pila3 div img {
-  filter: opacity(0.6); }
 
 .pila3 div img:hover {
   filter: none;
   transform: scale(2);
   transition: 0.8s; }
 
-/*Fin Efecto Collage*/
+/*Fin Efecto Collage Bucles*/
+/*Gallery Position Bucles*/
 .pila1 {
   flex: 25%;
   max-width: 25%;
-  padding: 0 4px; }
+  padding: 0px 4px; }
+
+.pila2 {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0px 4px; }
+
+.pila3 {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0px 4px; }
 
 .pila1 img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%; }
 
-.pila2 {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px; }
-
 .pila2 img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%; }
-
-.pila3 {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px; }
 
 .pila3 img {
   margin-top: 8px;

@@ -19,61 +19,34 @@
 .primera:not(.pila) {
     margin-top: 50px;
 }
-/*Efecto Collage*/
-.pila1 div img {
-    filter: opacity(0.6);
+/*Efecto Collage Bucles*/
+@for $i from 1 through 3 {
+	.pila#{$i} div img {
+    		filter: opacity(0.6);
+	}
 }
-.pila1 div img:hover {
-    filter: none;
-    transform: scale(2);
-    transition: 0.8s;
+@for $i from 1 through 3 {
+	.pila#{$i} div img:hover {
+    		filter: none;
+    		transform: scale(2);
+    		transition: 0.8s;
+	}
 }
-.pila2 div img {
-    filter: opacity(0.6);
+/*Fin Efecto Collage Bucles*/
+/*Gallery Position Bucles*/
+@for $i from 1 through 3 {
+	.pila#{$i}{
+		flex: 25%;
+		max-width: 25%;
+		padding: 0px 4px;
+	}
 }
-.pila2 div img:hover {
-    filter: none;
-    transform: scale(2);
-    transition: 0.8s;
-}
-.pila3 div img {
-    filter: opacity(0.6);
-}
-.pila3 div img:hover {
-    filter: none;
-    transform: scale(2);
-    transition: 0.8s;
-}
-/*Fin Efecto Collage*/
-.pila1 {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-.pila1 img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
-.pila2 {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-.pila2 img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
-.pila3 {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-.pila3 img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
+@for $i from 1 through 3 {
+	.pila#{$i} img {
+		margin-top: 8px;
+    		vertical-align: middle;
+    		width: 100%;
+	}
 }
 /*arreglo para laptop 1024px según Chrome*/
 @media screen and (max-width: 1024px){
