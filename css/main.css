@@ -78,6 +78,7 @@
     .pie div h5 {
       grid-area: pies;
       display: flex;
+      flex-direction: row;
       justify-content: center;
       width: 100%;
       margin: 0%;
@@ -94,15 +95,13 @@
 
 /*Fin del arreglo*/
 /*RRSS Icons*/
-.bi-facebook .bi-instagram .bi-twitter {
+.bi-facebook, .bi-instagram, .bi-twitter {
   font-size: 21px;
   text-align: center;
-  margin-left: 15px;
-  margin-right: 10px;
   color: #00ffcc; }
 
 /*Utiliza el Map que está en Vars*/
-.bi-facebook:hover {
+.bi-facebook:hover, .bi-instagram:hover, .bi-twitter:hover {
   background: #4f7ee4; }
 
 .bi-twitter:hover {
@@ -133,7 +132,7 @@
   .pie div ul li a {
     font-size: 16px;
     padding: 4px 9px; }
-  .bi-facebook .bi-twitter .bi-instagram {
+  .bi-facebook .bi-twitter .bi-instagram, .bi-instagram .bi-twitter .bi-instagram, .bi-twitter .bi-twitter .bi-instagram {
     font-size: 15px;
     margin-left: 12px;
     margin-right: 8px; }
@@ -154,7 +153,7 @@
     width: 90%;
     color: whitesmoke; }
   .news p {
-    font-family: 'Quicksand';
+    font-family: "Quicksand";
     font-size: 16px;
     margin: 15px 5px;
     width: 95%;
@@ -260,8 +259,8 @@
     text-decoration: none;
     margin: 7px; }
   .bio article {
-    font-family: 'Quicksand';
-    margin: 7px; }
+    font-family: "Quicksand";
+    margin: 15px 5px; }
 
 .band {
   color: #00ffcc;
@@ -273,7 +272,7 @@
     list-style-type: none;
     margin: 4px; }
     .band ul li a {
-      font-family: 'Quicksand';
+      font-family: "Quicksand";
       color: whitesmoke; }
       .band ul li a:hover {
         font-size: 150%; }
@@ -357,6 +356,7 @@
 .collage {
   grid-area: articulo;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 4px; }
@@ -562,6 +562,7 @@
 .musicLinks {
   grid-area: articulo;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   padding: 0px;
   margin-top: 100px; }

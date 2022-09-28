@@ -9,8 +9,7 @@
     "pies pies";
 }
 .mb-3 {
-    display: flex;
-    flex-direction: column;
+    @include flexCol;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 0%;

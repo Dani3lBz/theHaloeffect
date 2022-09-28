@@ -18,10 +18,10 @@
         color: $textColor;
     }
     p {
-        font-family: 'Quicksand';
-        font-size: 16px;
-        margin: 15px 5px;
-        width: 95%;
+        font-family: map-get($parrafo, ffam);
+        font-size: map-get($parrafo, fsize);
+        margin: map-get($parrafo, margin);
+        width: map-get($parrafo, width);
         color: $textColor;
     }
     div {

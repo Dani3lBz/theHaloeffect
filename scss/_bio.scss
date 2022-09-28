@@ -28,8 +28,8 @@
         margin: 7px;
     }
     article {
-        font-family: 'Quicksand';
-        margin: 7px;
+        font-family: map-get($parrafo, ffam);
+        margin: map-get($parrafo, margin);
     }
 }
 .band {    
@@ -44,7 +44,7 @@
             list-style-type: none;
             margin: 4px;
             a {
-                font-family: 'Quicksand';
+                font-family: map-get($parrafo, ffam);
                 color: $textColor;
                 &:hover {
                     font-size: 150%;
