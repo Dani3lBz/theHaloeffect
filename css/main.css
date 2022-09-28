@@ -33,9 +33,9 @@
   display: flex;
   flex-direction: column; }
   .caratula img {
-    align-items: center;
     width: 100%;
-    height: autopx;
+    height: auto;
+    align-items: center;
     margin: 0%;
     border: 0%; }
   .caratula h1 {

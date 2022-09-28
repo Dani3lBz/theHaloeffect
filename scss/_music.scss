@@ -18,19 +18,16 @@
         padding: 20px;
         padding: 10px;
         img {
-            width: 80px;
-            height: 80px;
+            @include sizes(80px, 80px);
             transition: 0.5s;
             &:hover {
-                width: 100px;
-                height: 100px; 
+               @include sizes(100px, 100px);
             } 
         }
     }
 }
 .musicBanner img {
-    width: 100%;
-    height: auto;
+    @include sizes(100%, auto);
 }
 /*arreglo para laptop 1024px según Chrome*/
 @media screen and (max-width: 1024px){
@@ -38,8 +35,7 @@
         grid-template-rows: auto 255px 836px 50px;
     }
     .musicLinks a img {
-        width: 60px;
-        height: 60px;
+        @include sizes(60px, 60px);
     }
 }
 /*Tablet 768px según Chrome y Responsively*/
@@ -55,8 +51,7 @@
 /*Arreglo para medidas intermedias según Chrome*/
 @media screen and (max-width: 657px){
     .musicLinks a img {
-        width: 45px;
-        height: 45px;
+        @include sizes(45px, 45px);
     }
 }
 @media screen and (max-width: 425px){
@@ -67,8 +62,7 @@
         margin-top: 65px;
         a {
             img {
-                width: 45px;
-                height: 45px;
+                @include sizes(45px, 45px);
             }
         }
     }
@@ -85,8 +79,7 @@
         a {
             padding: 15px;
             img {
-                width: 40px;
-                height: 40px;  
+                @include sizes(40px, 40px);  
             }
         }
     }
