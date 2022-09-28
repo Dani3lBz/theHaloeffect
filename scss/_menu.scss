@@ -121,15 +121,11 @@
     margin-right: 10px;
     color: #00ffcc;
 }
-.bi-facebook:hover {
-	color: #4f7ee4;
-}
-.bi-instagram:hover {
-    background: radial-gradient(circle at 30% 110%, #ffdb8b 0%, #ee653d 25%, #d42e81 50%, #a237b6 75%, #3e5fbc 100%);
-	box-shadow: 0 15px 40px 1px rgba(0,0,0,0.3);
-}
-.bi-twitter:hover {
-	color: #0da9f1
+/*Utiliza el Map que está en Vars*/
+@each $rrss, $color in $rrssH {
+    .bi-#{$rrss}:hover{
+        background: $color;
+    }
 }
 /*arreglo para laptop 1024px según Chrome*/
 @media screen and (max-width: 1024px){
