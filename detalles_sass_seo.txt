@@ -2,24 +2,31 @@ Agregué bucles en Gallery para hacer más sencillo el armado de las "pilas" uti
 
 Creé un Mapa para el hover de las rrss que se encuentran en el footer, dentro del partial _vars. Es llamado desde un EACH en el partial _menu. Para realizar cambios en los colores del hover de las 3 redes de una manera más rápida.
 
-También creé un mapa $parrafo para poder hacer map get en Index y Bio.
+También creé un mapa $parrafo para poder hacer map get para el texto en Index y Bio.
 
 Para escribir en una sola linea los valores de "ancho y alto", agregué un Mixin llamado sizes en _vars. Lo utilicé para reducir la cantidad de lineas en todos los partials que puede reemplazando width y height por @include sizes.
 
 Agregué 2 Mixin para Flex uno para col y otro para row dentro de _vars.scss para utilizar menos lineas cada vez que tengo que hacer un display flex.  
 
-Utilicé unos @extend en el partial _menu.scss. Para tomar las mismas caracteristicas en los 3 iconos de Facebook, Instagram y Twitter del footer. 
+Utilicé unos @extend en el partial _menu.scss. Para tomar las mismas caracteristicas en los 3 iconos de Facebook, Instagram y Twitter del footer (son bootstrap icons). 
 
 Agregué SEO con las siguientes características:
 
-Descripción: Coloqué la etiqueta meta description en el html para cada una de las páginas de mi Sitio.
+Título descriptivo en cada html en el head con la etiqueta title.
+
+Utilizo imágenes .jpg en todo el Sitio, menos para el logo en el header que es un .png. Traté de no perder calidad sin que sean demasiado pesadas (ninguna pasa los 500KB).
+Completé todos los alt de las img en caso de que no carguen por algún problema.
+
+Descripción: 
+Coloqué la etiqueta meta description en el html para cada una de las páginas de mi Sitio.
 Index: The Halo Effect is a Swedish melodic death metal band formed by former members of In Flames.
 Bio: Access to all the information about the band.
 Gallery: Access to photos and images of the band.
 Music: Listen to all the music of the band.
 Contact: Write to Us.
 
-Palabras clave: Agregué la etiqueta meta keywords en el html de cada una de las páginas de mi Sitio.
+Palabras clave: 
+Agregué la etiqueta meta keywords en el html de cada una de las páginas de mi Sitio.
 Index: METAL, BAND, MUSIC, NEWS
 Bio: METAL, BAND, BIO, INFO
 Gallery: METAL, BAND, GALLERY, PHOTOS, PICS
