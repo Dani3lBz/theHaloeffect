@@ -12,6 +12,8 @@ Utilicé unos @extend en el partial _menu.scss. Para tomar las mismas caracteris
 
 Agregué SEO con las siguientes características:
 
+Generé un sitemap para mi Sitio hosteado en GiyHub :) y copié el archivo .xml en mi carpeta root.
+
 Título descriptivo en cada html en el head con la etiqueta title.
 
 Utilizo imágenes .jpg en todo el Sitio, menos para el logo en el header que es un .png. Traté de no perder calidad sin que sean demasiado pesadas (ninguna pasa los 500KB).
