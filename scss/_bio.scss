@@ -80,7 +80,7 @@
 /*tamaño intermedio para mejor responsive"*/
 @media screen and (max-width: 991px){
     .bioGrid {
-        grid-template-rows: auto 186px 640px 50px;
+        grid-template-rows: auto 186px 1110px 50px;
     }
 	.bio h3 {
         font-size: 15px;
@@ -152,6 +152,6 @@
 /*Cel 320px según Chrome*/
 @media screen and (max-width: 320px){
     .bioGrid {
-        grid-template-rows: auto 90px 840px 40px;
+        grid-template-rows: auto 90px 880px 40px;
     }
 }
