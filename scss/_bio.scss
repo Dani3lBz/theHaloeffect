@@ -1,7 +1,7 @@
 .bioGrid {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 51px 338px 521px 74px;
+    grid-template-rows: 51px 321px 1371px 50px;
     grid-template-areas: 
     "cabeza cabeza"
     "pic pic"
@@ -25,7 +25,7 @@
     h3 {
         font-size: 18px;
         text-decoration: none;
-        margin: 7px;
+        margin: 15px;
     }
     article {
         font-family: map-get($parrafo, ffam);
@@ -37,12 +37,12 @@
     font-size: 16px;
     h3 {
         font-size: 18px;
-        margin: 7px;
+        margin: 15px;
     }
     ul{
         li {
             list-style-type: none;
-            margin: 4px;
+            margin: 10px;
             a {
                 font-family: map-get($parrafo, ffam);
                 color: $textColor;
@@ -53,10 +53,19 @@
         }
     }
 }
+.bioBandpic {
+    grid-area: articulo;
+    @include sizes(100%, auto);
+}
 /*arreglo para laptop 1024px según Chrome*/
+@media screen and (max-width: 1440px){
+    .bioGrid {
+        grid-template-rows: 51px 321px 1437px 50px;
+    }
+}
 @media screen and (max-width: 1024px){
     .bioGrid {
-        grid-template-rows: 51px 238px 538px 55px;
+        grid-template-rows: 51px 238px 1144px 55px;
     }
     .bio h3{
         font-size: 18px;
@@ -91,7 +100,7 @@
 /*Tablet 768px según Chrome y Responsively*/
 @media screen and (max-width: 768px){
     .bioGrid {
-        grid-template-rows: auto 186px 640px 50px;
+        grid-template-rows: auto 186px 940px 50px;
     }
     .bio h3 {
         font-size: 15px;
@@ -110,7 +119,7 @@
 }
 @media screen and (max-width: 425px){
     .bioGrid {
-        grid-template-rows: auto 114px 538px 50px;
+        grid-template-rows: auto 114px 848px 50px;
     }
     .bio h3 {
         font-size: 15px;
@@ -128,7 +137,7 @@
 @media screen and (max-width: 375px){
     /*Bio Cel*/
     .bioGrid {
-        grid-template-rows: auto 100px 520px 50px;
+        grid-template-rows: auto 100px 820px 50px;
     }
     .bio h3 {
         font-size: 12px;
@@ -143,6 +152,6 @@
 /*Cel 320px según Chrome*/
 @media screen and (max-width: 320px){
     .bioGrid {
-        grid-template-rows: auto 90px 595px 40px;
+        grid-template-rows: auto 90px 840px 40px;
     }
 }
