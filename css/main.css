@@ -355,7 +355,7 @@
   .bioGrid {
     grid-template-rows: auto 90px 880px 40px; } }
 
-@media screen and (max-width: 230px) {
+@media screen and (max-width: 233px) {
   .bioGrid {
     grid-template-rows: auto 90px 910px 40px; } }
 
