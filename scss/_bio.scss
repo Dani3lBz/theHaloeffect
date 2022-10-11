@@ -60,12 +60,12 @@
 /*arreglo para laptop 1024px según Chrome*/
 @media screen and (max-width: 1440px){
     .bioGrid {
-        grid-template-rows: 51px 321px 1437px 50px;
+        grid-template-rows: 51px 321px 1477px 50px;
     }
 }
 @media screen and (max-width: 1024px){
     .bioGrid {
-        grid-template-rows: 51px 238px 1144px 55px;
+        grid-template-rows: 51px 238px 1166px 55px;
     }
     .bio h3{
         font-size: 18px;
@@ -153,5 +153,10 @@
 @media screen and (max-width: 320px){
     .bioGrid {
         grid-template-rows: auto 90px 880px 40px;
+    }
+}
+@media screen and (max-width: 230px){
+    .bioGrid {
+        grid-template-rows: auto 90px 910px 40px;
     }
 }
