@@ -13,6 +13,7 @@ $parrafo: (
     fsize: 16px,
     margin: 15px 15px,
     width: 95%,
+    text-justify: auto,
 );
 
 @mixin sizes($width, $height) {
