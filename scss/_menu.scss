@@ -50,7 +50,7 @@
     h1 {
         color: #00ffcc;
         text-align: center;
-        font-size: 22px;
+        font-size: 24px;
         margin: 0px; 
     }
 }
@@ -131,7 +131,7 @@
 /*arreglo para laptop 1024px según Chrome*/
 @media screen and (max-width: 1024px){
     .caratula h1 {
-        font-size: 18px;
+        font-size: 22px;
     }
 }
 /*Tablet 768px según Chrome y Responsively*/
@@ -143,7 +143,7 @@
         font-size: 9px;
     }
     .caratula h1 {
-        font-size: 15px;
+        font-size: 18px;
     }
 }
 @media screen and (max-width: 425px){
@@ -163,6 +163,6 @@
         margin-right: 8px;
     }
     .caratula h1 {
-        font-size: 12px;
+        font-size: 16px;
     }
 }

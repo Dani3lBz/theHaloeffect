@@ -41,7 +41,7 @@
   .caratula h1 {
     color: #00ffcc;
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
     margin: 0px; }
 
 .pie {
@@ -113,7 +113,7 @@
 /*arreglo para laptop 1024px según Chrome*/
 @media screen and (max-width: 1024px) {
   .caratula h1 {
-    font-size: 18px; } }
+    font-size: 22px; } }
 
 /*Tablet 768px según Chrome y Responsively*/
 @media screen and (max-width: 768px) {
@@ -122,7 +122,7 @@
   .pie div h5 {
     font-size: 9px; }
   .caratula h1 {
-    font-size: 15px; } }
+    font-size: 18px; } }
 
 @media screen and (max-width: 425px) {
   .header div img {
@@ -137,7 +137,7 @@
     margin-left: 12px;
     margin-right: 8px; }
   .caratula h1 {
-    font-size: 12px; } }
+    font-size: 16px; } }
 
 .fullGrid {
   display: grid;
@@ -315,7 +315,7 @@
 /*Tablet 768px según Chrome y Responsively*/
 @media screen and (max-width: 768px) {
   .bioGrid {
-    grid-template-rows: auto 186px 940px 50px; }
+    grid-template-rows: auto 186px 980px 50px; }
   .bio h3 {
     font-size: 15px;
     margin: 10px; }
@@ -329,7 +329,7 @@
 
 @media screen and (max-width: 425px) {
   .bioGrid {
-    grid-template-rows: auto 114px 848px 50px; }
+    grid-template-rows: auto 114px 870px 50px; }
   .bio h3 {
     font-size: 15px; }
   .bio article {
@@ -342,7 +342,7 @@
 @media screen and (max-width: 375px) {
   /*Bio Cel*/
   .bioGrid {
-    grid-template-rows: auto 100px 820px 50px; }
+    grid-template-rows: auto 100px 880px 50px; }
   .bio h3 {
     font-size: 12px; }
   .bio article {

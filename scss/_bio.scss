@@ -100,7 +100,7 @@
 /*Tablet 768px según Chrome y Responsively*/
 @media screen and (max-width: 768px){
     .bioGrid {
-        grid-template-rows: auto 186px 940px 50px;
+        grid-template-rows: auto 186px 980px 50px;
     }
     .bio h3 {
         font-size: 15px;
@@ -119,7 +119,7 @@
 }
 @media screen and (max-width: 425px){
     .bioGrid {
-        grid-template-rows: auto 114px 848px 50px;
+        grid-template-rows: auto 114px 870px 50px;
     }
     .bio h3 {
         font-size: 15px;
@@ -137,7 +137,7 @@
 @media screen and (max-width: 375px){
     /*Bio Cel*/
     .bioGrid {
-        grid-template-rows: auto 100px 820px 50px;
+        grid-template-rows: auto 100px 880px 50px;
     }
     .bio h3 {
         font-size: 12px;
