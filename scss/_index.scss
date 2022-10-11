@@ -14,7 +14,7 @@
     h3 {
         font-size: 18px;
         margin: 10px;
-        width: 90%;
+        width: auto;
         color: $textColor;
     }
     p {
@@ -123,5 +123,14 @@
     }
     .videoBox iframe{
         margin-left: 12.5px;
+    }
+}
+@media screen and (max-width: 233px){
+    .fullGrid {
+        grid-template-rows: auto 100px 833px 244px auto;
+    }
+    .news div img {
+        margin-left: 24px;
+        width: 191px;
     }
 }

@@ -78,3 +78,8 @@
         grid-template-rows: auto 90px 400px 33px;
     }
 }
+@media screen and (max-width: 233px) {
+    .galleryGrid {
+        grid-template-rows: auto 90px 322px 33px;
+    }
+}
