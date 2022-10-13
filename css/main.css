@@ -139,6 +139,10 @@
   .caratula h1 {
     font-size: 16px; } }
 
+@media screen and (max-width: 320px) {
+  .caratula h1 {
+    font-size: 14px; } }
+
 .fullGrid {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -231,6 +235,8 @@
 @media screen and (max-width: 320px) {
   .fullGrid {
     grid-template-rows: auto 100px 833px 280px auto; }
+  .news h3 {
+    margin: 8px; }
   .news div img {
     margin-left: 35px; }
   .videoBox iframe {
@@ -464,7 +470,7 @@
 /*Cel 320px según Chrome*/
 @media screen and (max-width: 320px) {
   .galleryGrid {
-    grid-template-rows: auto 90px 400px 33px; } }
+    grid-template-rows: auto 90px 445px 33px; } }
 
 @media screen and (max-width: 233px) {
   .galleryGrid {
